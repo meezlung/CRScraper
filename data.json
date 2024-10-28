@@ -1,0 +1,1825 @@
+[
+    {
+      "Class Code": [
+        "41421"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THQ-FQ-1",
+        "ACOSTA, ANIKA MARIA ATHENA"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "F 7-8AM disc NIP F205",
+        "TTh 7-8:30AM lec NIP F201"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: IC(30 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "9/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41422"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THQ-FQ-2",
+        "SIMON, NIÑA ANGELICA"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "F 7-8AM disc NIP F208",
+        "TTh 7-8:30AM lec NIP F202"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "0/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41423"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THR-FR-1",
+        "TBA"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "TTh 8:30-10AM lec NIP F206",
+        "F 8:45-9:45AM disc NIP F210"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: MATH(15 slots), IC(15 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "5/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41424"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THR-WR-1",
+        "MAGSIGAY, CHRISTIAN JAY"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "TTh 8:30-10AM lec NIP F207",
+        "W 8:45-9:45AM disc NIP F210"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: IC(16 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "3/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41433"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THX-WX-1",
+        "HUSAY, HORACE ANDREW"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2:30-4PM lec NIP F206",
+        "W 2:45-3:45PM disc NIP F208"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "5/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41434"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 THX-WX-2",
+        "BINAMIRA, JONEL"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2:30-4PM lec NIP F207",
+        "W 2:45-3:45PM disc NIP F209"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: MATH(20 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "11/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41425"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFU-HU-1",
+        "ACOSTA, ANIKA MARIA ATHENA"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec NIP F205",
+        "Th 10:15-11:15AM disc NIP F208"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "6/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41426"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFU-HU-2",
+        "VILLEGAS, KRISTIAN HAUSER"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec NIP F206",
+        "Th 10:15-11:15AM disc NIP F209"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "23/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41427"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFU-HU-3",
+        "TBA"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec NIP F207",
+        "Th 10:15-11:15AM disc NIP F210"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F) [This class will be dissolved.]"
+      ],
+      "Available Slots / Total Slots": "0/0",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41428"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFV-HV-1",
+        "MAGSIGAY, CHRISTIAN JAY"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec NIP F205",
+        "Th 11:45AM-12:45PM disc NIP F208"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "2/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41429"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFV-HV-2",
+        "FARRALES, RALPH ADRIAN"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec NIP F206",
+        "Th 11:45AM-12:45PM disc NIP F209"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "12/30",
+      "Demand": "0",
+      "Status": "Enlisted already"
+    },
+    {
+      "Class Code": [
+        "41430"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFV-HV-3",
+        "DELA ROSA, LOURDES NICOLE"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec NIP F207",
+        "Th 11:45AM-12:45PM disc NIP F210"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS EM(25 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "12/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41431"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFW-HW-1",
+        "BINAMIRA, JONEL"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec NIP F206",
+        "Th 1:15-2:15PM disc NIP F208"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "3/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "41432"
+      ],
+      "Class Name / Instructor(s)": [
+        "Physics 72 WFW-HW-2",
+        "SANTOS, LEONARC MICHELLE"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec NIP F207",
+        "Th 1:15-2:15PM disc NIP F209"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: MATH(20 slots)",
+        "Prerequisite: Physics 71 (Mode: F2F)"
+      ],
+      "Available Slots / Total Slots": "15/30",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39397"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THQ",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 7-8:30AM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "1/28",
+      "Demand": "2",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39300"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THR",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 8:30-10AM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "14",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39294"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THU",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 10-11:30AM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(15 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39302"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THU-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 10-11:30AM lec MBAN 307"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "1/27",
+      "Demand": "4",
+      "Status": "Enlisted already"
+    },
+    {
+      "Class Code": [
+        "39301"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THV",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 11:30AM-1PM lec MBAN 307"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "1/27",
+      "Demand": "4",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39295"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THW",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 1-2:30PM lec MBAN 307"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39296"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 THX",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2:30-4PM lec MBAN 307"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/28",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39297"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 WFU",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(15 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39298"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 WFW",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39299"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 40 WFX",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MBAN 312"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Face to face. Prereq: Math 22 or Math 30 or Math 54"
+      ],
+      "Available Slots / Total Slots": "0/27",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39262"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFQ-HQ-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 7-8:30AM lec MB 301",
+        "Th 7:15-8:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "4",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39263"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFQ-HQ-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 7-8:30AM lec MB 302",
+        "Th 7:15-8:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS ChE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39264"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFQ-HQ-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 7-8:30AM lec MB 303",
+        "Th 7:15-8:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS MatE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39305"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFQ-HQ-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 7-8:30AM lec MB 304",
+        "Th 7:15-8:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS MetE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39395"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFQ-HQ-5",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 7-8:30AM lec MB 305",
+        "Th 7:15-8:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39265"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFR-HR-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 8:30-10AM lec MB 301",
+        "Th 8:45-9:45AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "3",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39266"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFR-HR-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 8:30-10AM lec MB 302",
+        "Th 8:45-9:45AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS Geol(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39267"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFR-HR-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 8:30-10AM lec MB 303",
+        "Th 8:45-9:45AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39268"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFR-HR-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 8:30-10AM lec MB 304",
+        "Th 8:45-9:45AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS EM(10 slots), BS ChE(15 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39402"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFR-HR-6",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 8:30-10AM lec MB 305",
+        "Th 8:45-9:45AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39269"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFU-HU-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MB 301",
+        "Th 10:15-11:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "3",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39270"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFU-HU-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MB 107",
+        "Th 10:15-11:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS (Stat)(10 slots), MBBP(12 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39271"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFU-HU-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MB 302",
+        "Th 10:15-11:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39272"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFU-HU-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MB 303",
+        "Th 10:15-11:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "3/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39273"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFU-HU-5",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec MB 304",
+        "Th 10:15-11:15AM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(10 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "3/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39274"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFV-HV-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec MB 301",
+        "Th 11:45AM-12:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: Educ(4 slots), BS GE(10 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "4",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39275"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFV-HV-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec MB 302",
+        "Th 11:45AM-12:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39276"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFV-HV-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec MB 303",
+        "Th 11:45AM-12:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39277"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFV-HV-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec MB 304",
+        "Th 11:45AM-12:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS MatE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39278"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFV-HV-5",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec MB 305",
+        "Th 11:45AM-12:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS IE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39279"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MB 301",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: MBBP(12 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "2",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39280"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MB 303",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "3/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39281"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MB 304",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "4/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39282"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MB 305",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: NIP(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "3/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39283"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-5",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MB 306",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: NIP(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "2/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39312"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFW-HW-6",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 1-2:30PM lec MBAN 307",
+        "Th 1:15-2:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "3/25",
+      "Demand": "0",
+      "Status": "Enlisted already"
+    },
+    {
+      "Class Code": [
+        "39284"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 301",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "3",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39285"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 302",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: EEEI(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39286"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-3",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 303",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS ChE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39287"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-4",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 304",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: NIP(14 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39288"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-5",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 305",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39313"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFX-HX-6",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 2:30-4PM lec MB 306",
+        "Th 2:45-3:45PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS IE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "39289"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFY-HY-1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 4-5:30PM lec MB 301",
+        "Th 4:15-5:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Open",
+        "Closes on",
+        "Aug 20, 2024 03:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS GE(20 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "0/26",
+      "Demand": "5",
+      "Status": "Add to Waitlist"
+    },
+    {
+      "Class Code": [
+        "39290"
+      ],
+      "Class Name / Instructor(s)": [
+        "Math 23 WFY-HY-2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0"
+      ],
+      "Schedule / Room": [
+        "WF 4-5:30PM lec MB 115",
+        "Th 4:15-5:15PM lec TBA"
+      ],
+      "Waitlisting Schedule": [
+        "Closed"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS ME(25 slots)",
+        "Combination of face-to-face and online learning (Wed/Fri: Face-to-face, Thu: Online) Prerequisite: Math 22"
+      ],
+      "Available Slots / Total Slots": "1/26",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54584",
+        "54585"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 20 THJ",
+        "Concealed",
+        "CS 20 THJ/WQR",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2-3PM lec AECH-Accenture Rm",
+        "W 7-10AM lab AECH-TL1"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "13/25",
+      "Demand": "2",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54584",
+        "54586"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 20 THJ",
+        "Concealed",
+        "CS 20 THJ/WWX",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2-3PM lec AECH-Accenture Rm",
+        "W 1-4PM lab AECH-TL2"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "4",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54584",
+        "54587"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 20 THJ",
+        "Concealed",
+        "CS 20 THJ/WYZ",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "TTh 2-3PM lec AECH-Accenture Rm",
+        "W 4-7PM lab AECH-TL2"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "9/25",
+      "Demand": "3",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54588",
+        "54647"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 20 THK",
+        "Concealed",
+        "CS 20 THK/WQR",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "TTh 3-4PM lec AECH-Accenture Rm",
+        "W 7-10AM lab AECH-TL3"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "0/28",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54588",
+        "54590"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 20 THK",
+        "Concealed",
+        "CS 20 THK/WYZ",
+        "Concealed"
+      ],
+      "Credits": [
+        "3.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "TTh 3-4PM lec AECH-Accenture Rm",
+        "W 4-7PM lab AECH-TL3"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "0/28",
+      "Demand": "2",
+      "Status": "Enlisted already"
+    },
+    {
+      "Class Code": [
+        "54591",
+        "54592"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 32 WFU",
+        "Concealed",
+        "CS 32 WFU/HUV1",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec AECH-Accenture Rm",
+        "Th 10AM-1PM lab AECH-TL1"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "10/25",
+      "Demand": "1",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54591",
+        "54648"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 32 WFU",
+        "Concealed",
+        "CS 32 WFU/HUV2",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec AECH-Accenture Rm",
+        "Th 10AM-1PM lab AECH-TL3"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "15/25",
+      "Demand": "3",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54591",
+        "54594"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 32 WFU",
+        "Concealed",
+        "CS 32 WFU/HYZ",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "WF 10-11:30AM lec AECH-Accenture Rm",
+        "Th 4-7PM lab AECH-TL2"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "0/28",
+      "Demand": "1",
+      "Status": "Enlisted already"
+    },
+    {
+      "Class Code": [
+        "54595",
+        "54649"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 32 WFV",
+        "Concealed",
+        "CS 32 WFV/HUV",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec AECH-Accenture Rm",
+        "Th 10AM-1PM lab AECH-TL2"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "5/25",
+      "Demand": "0",
+      "Status": "CLOSED"
+    },
+    {
+      "Class Code": [
+        "54595",
+        "54597"
+      ],
+      "Class Name / Instructor(s)": [
+        "CS 32 WFV",
+        "Concealed",
+        "CS 32 WFV/HYZ",
+        "Concealed"
+      ],
+      "Credits": [
+        "4.0",
+        "0.0"
+      ],
+      "Schedule / Room": [
+        "WF 11:30AM-1PM lec AECH-Accenture Rm",
+        "Th 4-7PM lab AECH-TL3"
+      ],
+      "Waitlisting Schedule": [
+        "Closed",
+        "Opens on",
+        "Aug 20, 2024 01:00 pm"
+      ],
+      "Restrictions / Remarks": [
+        "For: BS CS",
+        "Combination of face-to-face and online learning."
+      ],
+      "Available Slots / Total Slots": "0/25",
+      "Demand": "1",
+      "Status": "CLOSED"
+    }
+  ]
