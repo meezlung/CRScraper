@@ -10,7 +10,7 @@ data: list[dict[str, str | list[str]]] = data_class.data() # These are just temp
 
 Course: TypeAlias = str
 Section: TypeAlias = str
-Schedule: TypeAlias = list[dict[str, str]]
+Schedule: TypeAlias = list[dict[str, str | int | float]]
 ListOfCoursesWithTime: TypeAlias = list[dict[Course, list[dict[Section, Schedule]]]]
 
 class DataSorter:
@@ -37,6 +37,10 @@ class DataSorter:
                     "Day": schedule[0],
                     "Time": schedule[1],
                     "Room": schedule[2] + " " + schedule[3],
+                    "Available Slots": int(str(d["Available Slots / Total Slots"]).split("/")[0]),
+                    "Total Slots": int(str(d["Available Slots / Total Slots"]).split("/")[1]),
+                    "Demand": int(str(d["Demand"])),
+                    "Credits": float(d["Credits"][0]) + float(d["Credits"][1]) if len(d["Credits"]) > 1 else float(d["Credits"][0]),
                     # Add more details here if needed, especially for the number of slots available. We need to run some analysis on that too
                 })
 
@@ -128,19 +132,20 @@ class ScheduleGenerator:
             for entry1 in existing_schedule:
                 for entry2 in new_schedule:
                     
-                    # Parse the days and check for any overlap
-                    days1 = self.parse_days(entry1["Day"])
-                    days2 = self.parse_days(entry2["Day"])
-                    overlapping_days = set(days1) & set(days2)
+                    if type(entry1["Day"]) == str and type(entry2["Day"]) == str:
+                        # Parse the days and check for any overlap
+                        days1 = self.parse_days(entry1["Day"])
+                        days2 = self.parse_days(entry2["Day"])
+                        overlapping_days = set(days1) & set(days2)
                     
-                    if overlapping_days:
-                        
-                        # Parse the time and check for any overlap
-                        start1, end1 = self.parse_time(entry1["Time"])
-                        start2, end2 = self.parse_time(entry2["Time"])
+                        if overlapping_days:
+                            if type(entry1["Time"]) == str and type(entry2["Time"]) == str:    
+                                # Parse the time and check for any overlap
+                                start1, end1 = self.parse_time(entry1["Time"])
+                                start2, end2 = self.parse_time(entry2["Time"])
 
-                        if start1 < end2 and start2 < end1:
-                            return True
+                                if start1 < end2 and start2 < end1:
+                                    return True
         
         return False
 
