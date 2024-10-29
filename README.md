@@ -31,5 +31,6 @@
 
  
 ## Mga kulang pa:
+ - Fix some property of schedules 
  - Ranking system
  - App interface
