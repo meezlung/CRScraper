@@ -36,4 +36,4 @@
    - Based on available slots and demands  
    - RUPP Linking?  
  - App interface
- - 
+ - I think we can organize while scraping na
