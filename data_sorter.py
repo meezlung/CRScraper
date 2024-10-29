@@ -3,6 +3,7 @@ from crs_data import Data
 
 from datetime import datetime
 import json
+import csv
 
 data_class = Data()
 
@@ -41,6 +42,7 @@ class DataSorter:
                     "Total Slots": int(str(d["Available Slots / Total Slots"]).split("/")[1]),
                     "Demand": int(str(d["Demand"])),
                     "Credits": float(d["Credits"][0]) + float(d["Credits"][1]) if len(d["Credits"]) > 1 else float(d["Credits"][0]),
+                    "Instructors": d["Class Name / Instructor(s)"][1] + ", " + d["Class Name / Instructor(s)"][3] if len(d["Class Name / Instructor(s)"]) > 2 else d["Class Name / Instructor(s)"][1]
                     # Add more details here if needed, especially for the number of slots available. We need to run some analysis on that too
                 })
 
@@ -191,3 +193,32 @@ class ScheduleGenerator:
         for schedule in all_schedules:
             print(json.dumps(schedule, indent=2))
             print("\n" + "-" * 40 + "\n")
+
+    def convert_to_csv(self, all_schedules: list[ListOfCoursesWithTime]) -> None:
+        headers = [
+            "Course", "Section", "Day", "Time", "Room",
+            "Available Slots", "Total Slots", "Demand", "Credits", "Instructors"
+        ]
+        
+        with open("schedules.csv", mode="w", newline="") as file:
+            writer = csv.DictWriter(file, fieldnames=headers)
+            writer.writeheader()
+
+            # Flatten and write each schedule to the CSV
+            for schedules in all_schedules:
+
+                # Add an empty row to separate each schedule
+                writer.writerow({})
+
+                for course_entry in schedules:
+                    for course, sections in course_entry.items():
+                        for section_entry in sections:
+                            for section, schedule_list in section_entry.items():
+                                for schedule in schedule_list:
+                                    row: dict[str, Course | int | float] = {
+                                        "Course": course,
+                                        "Section": section,
+                                        **schedule
+                                    }
+                                    writer.writerow(row)
+        
