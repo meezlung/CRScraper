@@ -33,4 +33,7 @@
 ## Mga kulang pa:
  - Fix some property of schedules 
  - Ranking system
+   - Based on available slots and demands  
+   - RUPP Linking?  
  - App interface
+ - 
