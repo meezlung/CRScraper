@@ -1,13 +1,7 @@
 from typing import TypeAlias
-from crs_data import Data
-
 from datetime import datetime
 import json
 import csv
-
-data_class = Data()
-
-data: list[dict[str, str | list[str]]] = data_class.data() # These are just temporary just for now
 
 Course: TypeAlias = str
 Section: TypeAlias = str
@@ -16,49 +10,71 @@ ListOfCoursesWithTime: TypeAlias = list[dict[Course, list[dict[Section, Schedule
 
 class DataSorter:
     def __init__(self, data: list[dict[str, str | list[str]]]) -> None:
-        data_class = Data()
-        self.data = data_class.data()
+        self.data = data
         self.subjects_with_time: ListOfCoursesWithTime = []
 
     def sort_data(self) -> None:
-        for d in data:
+        for d in self.data:
+            course, section = self.extract_course_and_section(d["Class Name / Instructor(s)"])
+            formatted_schedule: Schedule = self.format_schedule(d)
 
-            # Format the class name / instructor(s)
-            class_name = d["Class Name / Instructor(s)"][0].split(" ")
-            course = class_name[0] + " " + class_name[1]
-            section = class_name[2]
+            if self.course_exists(course): 
+                self.add_section_to_existing_course(course, section, formatted_schedule)
 
-            formatted_schedule: Schedule = []
-
-            # Format the schedule / room
-            for i in range(len(d["Schedule / Room"])):
-                schedule = d["Schedule / Room"][i].split(" ")
-
-                formatted_schedule.append({
-                    "Day": schedule[0],
-                    "Time": schedule[1],
-                    "Room": schedule[2] + " " + schedule[3],
-                    "Available Slots": int(str(d["Available Slots / Total Slots"]).split("/")[0]),
-                    "Total Slots": int(str(d["Available Slots / Total Slots"]).split("/")[1]),
-                    "Demand": int(str(d["Demand"])),
-                    "Credits": float(d["Credits"][0]) + float(d["Credits"][1]) if len(d["Credits"]) > 1 else float(d["Credits"][0]),
-                    "Instructors": d["Class Name / Instructor(s)"][1] + ", " + d["Class Name / Instructor(s)"][3] if len(d["Class Name / Instructor(s)"]) > 2 else d["Class Name / Instructor(s)"][1]
-                    # Add more details here if needed, especially for the number of slots available. We need to run some analysis on that too
-                })
-
-            # Checks everytime if the course is already in the subjects_with_time list
-            if any(course in subject for subject in self.subjects_with_time): 
-                for subject in self.subjects_with_time:
-                    if course in subject:
-                        subject[course].append({
-                            section: formatted_schedule
-                        })
             else:
-                self.subjects_with_time.append({
-                    course: [{
-                        section: formatted_schedule
-                    }]
-                })
+                self.add_new_course(course, section, formatted_schedule)
+
+    def extract_course_and_section(self, class_info: str | list[str]) -> tuple[str, str]:
+        class_name = class_info[0].split(" ")
+        return f"{class_name[0]} {class_name[1]}", class_name[2]
+    
+    def course_exists(self, course: str) -> bool:
+        return any(course in subject for subject in self.subjects_with_time)
+
+    def format_schedule(self, d: dict[str, str | list[str]]) -> Schedule:
+        formatted_schedule: Schedule = []
+
+        for i in range(len(d["Schedule / Room"])):
+            schedule = d["Schedule / Room"][i].split(" ")
+
+            formatted_schedule.append({
+                # Essential for comparing conflicts
+                "Day": schedule[0],
+                "Time": schedule[1],
+
+                # Additional information
+                "Room": f"{schedule[2]} {schedule[3]}",
+                "Available Slots": self.get_available_slots(str(d["Available Slots / Total Slots"])),
+                "Total Slots": self.get_total_slots(str(d["Available Slots / Total Slots"])),
+                "Demand": self.get_demand(str(d["Demand"])),
+                "Credits": self.calculate_total_credits(d["Credits"]),
+                "Instructors": self.format_instructions(d["Class Name / Instructor(s)"])
+            })
+
+        return formatted_schedule
+
+    def get_available_slots(self, available_total_slots: str) -> int:
+        return int(available_total_slots.split("/")[0])
+    
+    def get_total_slots(self, available_total_slots: str) -> int:
+        return int(available_total_slots.split("/")[1])
+    
+    def get_demand(self, demand: str) -> int:
+        return int(demand)
+
+    def calculate_total_credits(self, credits: str | list[str]) -> float:
+        return float(credits[0]) + float(credits[1]) if len(credits) > 1 else float(credits[0])
+
+    def format_instructions(self, instructors: str | list[str]) -> str:
+        return f"{instructors[1]}, {instructors[3]}" if len(instructors) > 2 else instructors[1]
+
+    def add_section_to_existing_course(self, course: str, section: str, formatted_schedule: Schedule) -> None:
+        for subject in self.subjects_with_time:
+            if course in subject:
+                subject[course].append({section: formatted_schedule})
+
+    def add_new_course(self, course: str, section: str, formatted_schedule: Schedule) -> None:
+        self.subjects_with_time.append({course: [{section: formatted_schedule}]})
 
     def display_data(self, subjects_with_time: ListOfCoursesWithTime) -> None:
         for subject in subjects_with_time:
