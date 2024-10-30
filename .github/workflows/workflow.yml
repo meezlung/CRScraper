@@ -39,22 +39,23 @@ jobs:
           pip install -r requirements.txt
           pip install pylint
 
-      - name: Run Python linter (Pylance)
+      - name: Run Python linter (Pylint)
+        id: pylint
         run: |
-          # Run pylint and capture both stdout and stderr
-          pylint_output=$(pylint *.py 2>&1)
-          echo "$pylint_output" > pylint_output.txt  # Save output to a file
-          
-          # Extract the score from the output
-          score=$(echo "$pylint_output" | grep -oP 'Your code has been rated at \K[0-9]*\.[0-9]+')
-          echo "Pylint Score: $score"
-          
-          # Check if the score is below 4.5
-          if (( $(echo "$score < 4.5" | bc -l) )); then
-            echo "Pylint score is below 4.5. Failing the workflow."
-            cat pylint_output.txt  # Optionally show output when failing
+          export PYTHONPATH=.
+          pylint crs_scraper > pylint_report.txt || true
+          SCORE=$(grep -o "rated at [0-9.]\+" pylint_report.txt | awk '{print $3}')
+          echo "Pylint score: $SCORE"
+          if (( $(echo "$SCORE < 4.5" | bc -l) )); then
+            echo "Pylint score is below 4.5. Failing the job."
             exit 1
+          else
+            echo "Pylint score is above 4.5. Passing the job."
           fi
+
+      - name: Display Pylint Report
+        if: success() || failure()
+        run: cat pylint_report.txt
 
       # Will need later if there are tests already
       # - name: Run tests
