@@ -41,9 +41,15 @@ jobs:
 
       - name: Run Python linter (Pylance)
         run: |
-          pylint *.py > pylint_output.txt  # Capture output
-          score=$(grep -oP 'Your code has been rated at \K[0-9]*\.[0-9]+' pylint_output.txt)  # Extract score
+          # Run pylint and capture both stdout and stderr
+          pylint_output=$(pylint *.py 2>&1)
+          echo "$pylint_output" > pylint_output.txt  # Save output to a file
+          
+          # Extract the score from the output
+          score=$(echo "$pylint_output" | grep -oP 'Your code has been rated at \K[0-9]*\.[0-9]+')
           echo "Pylint Score: $score"
+          
+          # Check if the score is below 4.5
           if (( $(echo "$score < 4.5" | bc -l) )); then
             echo "Pylint score is below 4.5. Failing the workflow."
             cat pylint_output.txt  # Optionally show output when failing
