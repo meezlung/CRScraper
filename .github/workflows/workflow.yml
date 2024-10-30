@@ -37,12 +37,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pylint # Install pylint for linting
+          pip install pylint
 
       - name: Run Python linter (Pylance)
         run: |
           export PYTHONPATH=.
-          pylint crs_scraper/
+          pylint crs_scraper
 
       # Will need later if there are tests already
       # - name: Run tests
