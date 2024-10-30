@@ -10,10 +10,14 @@ ListOfCoursesWithTime: TypeAlias = list[dict[Course, list[dict[Section, Schedule
 
 class DataSorter:
     def __init__(self, data: list[dict[str, str | list[str]]]) -> None:
+        """ Initializes the DataSorter with the provided data. """
         self.data = data
         self.subjects_with_time: ListOfCoursesWithTime = []
 
     def sort_data(self) -> None:
+        """ Sorts the data by iterating through each entry in self.data, extracting the course and section
+        information, and formatting the schedule. Depending on whether the course already exists, it 
+        either adds the section to the existing course or creates a new course entry. """
         for d in self.data:
             course, section = self.extract_course_and_section(d["Class Name / Instructor(s)"])
             formatted_schedule: Schedule = self.format_schedule(d)
@@ -25,25 +29,29 @@ class DataSorter:
                 self.add_new_course(course, section, formatted_schedule)
 
     def extract_course_and_section(self, class_info: str | list[str]) -> tuple[str, str]:
+        """ Extracts the course name and section from a given class information string or list of strings. 
+        Class Info[0] and Class Info[1] are the course name, respectively. Class Info[2] is the section"""
         class_name = class_info[0].split(" ")
         return f"{class_name[0]} {class_name[1]}", class_name[2]
     
     def course_exists(self, course: str) -> bool:
+        """ Check if a course exists within the subjects with time. """
         return any(course in subject for subject in self.subjects_with_time)
 
     def format_schedule(self, d: dict[str, str | list[str]]) -> Schedule:
+        """ Formats the schedule by extracting the day, time, room, available slots, total slots, demand, credits, and instructors. """
         formatted_schedule: Schedule = []
 
         for i in range(len(d["Schedule / Room"])):
-            schedule = d["Schedule / Room"][i].split(" ")
+            schedule_parts = d["Schedule / Room"][i].split(" ")
 
             formatted_schedule.append({
                 # Essential for comparing conflicts
-                "Day": schedule[0],
-                "Time": schedule[1],
+                "Day": schedule_parts[0],
+                "Time": schedule_parts[1],
 
                 # Additional information
-                "Room": f"{schedule[2]} {schedule[3]}",
+                "Room": f"{schedule_parts[2]} {schedule_parts[3]}",
                 "Available Slots": self.get_available_slots(str(d["Available Slots / Total Slots"])),
                 "Total Slots": self.get_total_slots(str(d["Available Slots / Total Slots"])),
                 "Demand": self.get_demand(str(d["Demand"])),
@@ -54,29 +62,37 @@ class DataSorter:
         return formatted_schedule
 
     def get_available_slots(self, available_total_slots: str) -> int:
+        """ Extracts the available slots from the available total slots string. """
         return int(available_total_slots.split("/")[0])
     
     def get_total_slots(self, available_total_slots: str) -> int:
+        """ Extracts the total slots from the available total slots string. """
         return int(available_total_slots.split("/")[1])
     
     def get_demand(self, demand: str) -> int:
+        """ Extracts the demand from the demand string. """
         return int(demand)
 
     def calculate_total_credits(self, credits: str | list[str]) -> float:
-        return float(credits[0]) + float(credits[1]) if len(credits) > 1 else float(credits[0])
+        """ Calculates the total credits from the credits string. Credits is a list of strings, usually with 1 or more than 1 element. """
+        return sum([float(credit) for credit in credits])
 
     def format_instructions(self, instructors: str | list[str]) -> str:
+        """ Formats the instructors string or list of instructors. """
         return f"{instructors[1]}, {instructors[3]}" if len(instructors) > 2 else instructors[1]
 
     def add_section_to_existing_course(self, course: str, section: str, formatted_schedule: Schedule) -> None:
+        """ Adds a new section to an existing course. """
         for subject in self.subjects_with_time:
             if course in subject:
                 subject[course].append({section: formatted_schedule})
 
     def add_new_course(self, course: str, section: str, formatted_schedule: Schedule) -> None:
+        """ Adds a new course to the subjects with time. """
         self.subjects_with_time.append({course: [{section: formatted_schedule}]})
 
     def display_data(self, subjects_with_time: ListOfCoursesWithTime) -> None:
+        """ Displays the subjects with time in a readable format. """
         for subject in subjects_with_time:
             print(json.dumps(subject, indent=2))
 
