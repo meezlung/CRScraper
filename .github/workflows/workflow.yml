@@ -41,8 +41,14 @@ jobs:
 
       - name: Run Python linter (Pylance)
         run: |
-          export PYTHONPATH=.
-          pylint crs_scraper
+          pylint *.py > pylint_output.txt  # Capture output
+          score=$(grep -oP 'Your code has been rated at \K[0-9]*\.[0-9]+' pylint_output.txt)  # Extract score
+          echo "Pylint Score: $score"
+          if (( $(echo "$score < 4.5" | bc -l) )); then
+            echo "Pylint score is below 4.5. Failing the workflow."
+            cat pylint_output.txt  # Optionally show output when failing
+            exit 1
+          fi
 
       # Will need later if there are tests already
       # - name: Run tests
