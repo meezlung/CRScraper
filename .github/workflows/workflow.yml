@@ -41,7 +41,8 @@ jobs:
 
       - name: Run Python linter (Pylance)
         run: |
-          pylint crs_scraper
+          export PYTHONPATH=.
+          pylint crs_scraper/
 
       # Will need later if there are tests already
       # - name: Run tests
