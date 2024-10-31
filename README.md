@@ -29,7 +29,23 @@
 
 <br />
 
- 
+## instructions for development
+ 1. Clone the repository
+    ```
+    git clone https://github.com/meezlung/crs_scraper.git
+    ```
+
+ 2. Build docker
+    ```
+    docker build -t crs_proj
+    ```
+
+ 3. Run docker
+    ```
+    docker run --name <insert-container-name-here> crs_proj
+    ```
+
+
 ## Mga kulang pa:
  - Fix some property of schedules 
  - Ranking system
