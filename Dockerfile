@@ -10,5 +10,8 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Change directory to run crs_main.py
+WORKDIR /app/crs_scraper
+
 # Run the application
 CMD ["python", "crs_main.py"]
