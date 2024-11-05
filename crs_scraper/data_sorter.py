@@ -2,6 +2,7 @@ from typing import TypeAlias
 from datetime import datetime
 import json
 import csv
+from probability_calculator import ProbabilityCalculator
 
 Course: TypeAlias = str
 Section: TypeAlias = str
@@ -13,6 +14,7 @@ class DataSorter:
         """ Initializes the DataSorter with the provided data. """
         self.data = data
         self.subjects_with_time: ListOfCoursesWithTime = []
+        self.ProbabilityCalculator = ProbabilityCalculator()
 
     def sort_data(self) -> None:
         """ Sorts the data by iterating through each entry in self.data, extracting the course and section
@@ -45,19 +47,36 @@ class DataSorter:
         for i in range(len(d["Schedule / Room"])):
             schedule_parts = d["Schedule / Room"][i].split(" ")
 
-            formatted_schedule.append({
-                # Essential for comparing conflicts
-                "Day": schedule_parts[0],
-                "Time": schedule_parts[1],
+            if i == 0:
+                formatted_schedule.append({
+                    # Essential for comparing conflicts
+                    "Day": schedule_parts[0],
+                    "Time": schedule_parts[1],
 
-                # Additional information
-                "Room": f"{schedule_parts[2]} {schedule_parts[3]}",
-                "Available Slots": self.get_available_slots(str(d["Available Slots / Total Slots"])),
-                "Total Slots": self.get_total_slots(str(d["Available Slots / Total Slots"])),
-                "Demand": self.get_demand(str(d["Demand"])),
-                "Credits": self.calculate_total_credits(d["Credits"]),
-                "Instructors": self.format_instructions(d["Class Name / Instructor(s)"])
-            })
+                    # Additional information
+                    "Room": f"{schedule_parts[2]} {schedule_parts[3]}",
+                    "Available Slots": self.get_available_slots(str(d["Available Slots / Total Slots"])),
+                    "Total Slots": self.get_total_slots(str(d["Available Slots / Total Slots"])),
+                    "Demand": self.get_demand(str(d["Demand"])),
+                    "Credits": self.calculate_total_credits(d["Credits"]),
+                    "Probability": self.ProbabilityCalculator.calculate_probability("regular", self.get_available_slots(str(d["Available Slots / Total Slots"])), self.get_demand(str(d["Demand"])), True),
+                    "Instructors": self.format_instructions(d["Class Name / Instructor(s)"])[i],
+                })
+            else:
+                formatted_schedule.append({
+                    # Essential for comparing conflicts
+                    "Day": schedule_parts[0],
+                    "Time": schedule_parts[1],
+
+                    # Additional information
+                    "Room": f"{schedule_parts[2]} {schedule_parts[3]}",
+                    "Available Slots": "",
+                    "Total Slots": "",
+                    "Demand": "",
+                    "Credits": "",
+                    "Probability": "",
+                    "Instructors": self.format_instructions(d["Class Name / Instructor(s)"])[i],
+                })
 
         return formatted_schedule
 
@@ -77,9 +96,9 @@ class DataSorter:
         """ Calculates the total credits from the credits string. Credits is a list of strings, usually with 1 or more than 1 element. """
         return sum([float(credit) for credit in credits])
 
-    def format_instructions(self, instructors: str | list[str]) -> str:
+    def format_instructions(self, instructors: str | list[str]) -> str | tuple[str, str]:
         """ Formats the instructors string or list of instructors. """
-        return f"{instructors[1]}, {instructors[3]}" if len(instructors) > 2 else instructors[1]
+        return instructors[1], instructors[3] if len(instructors) > 2 else instructors[1]
 
     def add_section_to_existing_course(self, course: str, section: str, formatted_schedule: Schedule) -> None:
         """ Adds a new section to an existing course. """
@@ -229,7 +248,7 @@ class ScheduleGenerator:
     def convert_to_csv(self, all_schedules: list[ListOfCoursesWithTime]) -> None:
         headers = [
             "Course", "Section", "Day", "Time", "Room",
-            "Available Slots", "Total Slots", "Demand", "Credits", "Instructors"
+            "Available Slots", "Total Slots", "Demand", "Credits", "Probability", "Instructors" 
         ]
         
         with open("schedules.csv", mode="w", newline="") as file:
