@@ -1,9 +1,8 @@
 # crs_scraper
 
-### crs_scraper.py (still not in the repo due to privacy reasons)
+### crs_scraper.py 
  - scrapes everything from the crs website then outputs a data in the form of list[dict[str, str | list[str]]]
  - TODO:
-   - Still needs good input system
    - Still needs good user interface in the terminal 
 
 <br />
