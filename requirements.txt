@@ -1,3 +1,2 @@
 requests>=2.23.3
 beautifulsoup4>=4.12.3
-python>=3.10.0
