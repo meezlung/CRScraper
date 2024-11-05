@@ -65,7 +65,7 @@ jobs:
 
       - name: Display Ruff Report
         if: success() || failure()
-        run: cat_ruff_report.txt
+        run: cat ruff_report.txt
 
       # Will need later if there are tests already
       # - name: Run tests
