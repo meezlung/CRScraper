@@ -166,14 +166,14 @@ class ScheduleGenerator:
             for entry1 in existing_schedule:
                 for entry2 in new_schedule:
                     
-                    if type(entry1["Day"]) == str and type(entry2["Day"]) == str:
+                    if isinstance(entry1["Day"], str) and isinstance(entry2["Day"], str):
                         # Parse the days and check for any overlap
                         days1 = self.parse_days(entry1["Day"])
                         days2 = self.parse_days(entry2["Day"])
                         overlapping_days = set(days1) & set(days2)
                     
                         if overlapping_days:
-                            if type(entry1["Time"]) == str and type(entry2["Time"]) == str:    
+                            if isinstance(entry1["Time"], str) and isinstance(entry2["Time"], str):    
                                 # Parse the time and check for any overlap
                                 start1, end1 = self.parse_time(entry1["Time"])
                                 start2, end2 = self.parse_time(entry2["Time"])
