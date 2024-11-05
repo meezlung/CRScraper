@@ -37,7 +37,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pylint
+          pip install pylint ruff
 
       - name: Run Python linter (Pylint)
         id: pylint
@@ -56,6 +56,16 @@ jobs:
       - name: Display Pylint Report
         if: success() || failure()
         run: cat pylint_report.txt
+
+      - name: Run Ruff linter
+        id: ruff
+        run: |
+          ruff check . > ruff_report.txt || true
+          echo "Ruff linting completed."
+
+      - name: Display Ruff Report
+        if: success() || failure()
+        run: cat_ruff_report.txt
 
       # Will need later if there are tests already
       # - name: Run tests
