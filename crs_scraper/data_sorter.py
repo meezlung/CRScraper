@@ -210,6 +210,7 @@ class ScheduleGenerator:
         
 
         if current_index == len(subjects_with_time):
+            # print(json.dumps(current_schedule, indent=2))
             all_schedules.append(current_schedule.copy())
             return
         
@@ -245,13 +246,13 @@ class ScheduleGenerator:
             print(json.dumps(schedule, indent=2))
             print("\n" + "-" * 40 + "\n")
 
-    def convert_to_csv(self, all_schedules: list[ListOfCoursesWithTime]) -> None:
+    def convert_to_csv(self, all_schedules: list[ListOfCoursesWithTime], filename: str) -> None:
         headers = [
             "Course", "Section", "Day", "Time", "Room",
             "Available Slots", "Total Slots", "Demand", "Credits", "Probability", "Instructors" 
         ]
         
-        with open("schedules.csv", mode="w", newline="") as file:
+        with open(filename, mode="w", newline="") as file:
             writer = csv.DictWriter(file, fieldnames=headers)
             writer.writeheader()
 
@@ -272,4 +273,25 @@ class ScheduleGenerator:
                                         **schedule
                                     }
                                     writer.writerow(row)
+
+    def calculate_average_probability(self, schedule: ListOfCoursesWithTime) -> float:
+        probabilities: list[float] = []
+        for course_entry in schedule:
+            for _, sections in course_entry.items():
+                for section_entry in sections:
+                    for _, schedule_list in section_entry.items():
+                        for entry in schedule_list:
+                            if "Probability" in entry and isinstance(entry["Probability"], (int, float)):
+                                if entry["Probability"]:
+                                    probabilities.append(float(entry["Probability"]))
         
+        return sum(probabilities) / len(probabilities) if probabilities else 0.0
+
+    def rank_by_probability(self, all_schedules: list[ListOfCoursesWithTime]) -> list[ListOfCoursesWithTime]:
+        # Rank schedules by average probability
+        all_schedules.sort(
+            key=self.calculate_average_probability,
+            reverse=True
+        )
+        
+        return all_schedules
