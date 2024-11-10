@@ -144,5 +144,5 @@ https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00
 
 # Mga Kulang Pa:
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/)
- - I think there should be a Login Page sa Svelte App. This is to use the credentials sa CRScraper.
+ - I think there should be a Login Page sa Svelte App. This is to use the credentials sa CRScraper. Link then test locally.
  - If kaya, host sana 'yung app sa internet.
