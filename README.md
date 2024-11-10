@@ -136,5 +136,4 @@ A simple schedule maker with probability ranking-based system for University of 
 <br />
 
 # Mga Kulang Pa:
- - Ranking system
-   - based on [RUPP Linking](https://rupp.onrender.com/)?
+ - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/)
