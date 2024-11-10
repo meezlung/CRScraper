@@ -138,7 +138,12 @@ This project is a simple schedule maker with probability ranking-based system fo
 <br />
 
 # Demo
-https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00
+<!-- https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00 -->
+
+
+https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96
+
+
 
 <br />
 
