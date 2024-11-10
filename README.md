@@ -6,12 +6,6 @@
 # crs_scraper
 A simple schedule maker with probability ranking-based system for University of the Philippines Diliman's [Computerized Registration System (CRS)](https://crs.upd.edu.ph/).
 
-<br />
-
-
-
-<br />
-
 **_Note: This project is still UNDER DEVELOPMENT._**
 
 <br />
