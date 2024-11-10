@@ -1,50 +1,83 @@
+# from crs_scraper.crscraper import CRScraper
 from crs_scraper.crs_data import Data
-from crs_scraper.data_sorter import DataSorter, ScheduleGenerator, ListOfCoursesWithTime
-from flask import Flask, jsonify
+from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
+from flask import Flask, Response, jsonify, make_response, request
 from flask_cors import CORS
 import csv
-
-# ------------------------------------------------------------
-# from crs_scraper.crscraper import CRScraper
-
-# login_url = "https://crs.upd.edu.ph/"
-# all_course_table_schedule_url = ["https://crs.upd.edu.ph/student_registration/class_search/5670", 
-                                 # "https://crs.upd.edu.ph/student_registration/class_search/18849", 
-                                 # "https://crs.upd.edu.ph/student_registration/class_search/18843",
-                                 # "https://crs.upd.edu.ph/student_registration/class_search/19401",
-                                 # "https://crs.upd.edu.ph/student_registration/class_search/19395"
-                                 # ]
-
-# crs_username = input("Enter CRS Username: ")
-# crs_password = input("Enter CRS Password: ")
-
-# crs_scraper = CRScraper(login_url, crs_username, crs_password, all_course_table_schedule_url)
-
-# data = crs_scraper.main() # This should replace the data variable
-# ------------------------------------------------------------
-
-
-data_class = Data() 
-data: list[dict[str, str | list[str]]] = data_class.data()
-
-data_sorter = DataSorter(data)
-data_sorter.sort_data()
-# data_sorter.display_data(data_sorter.subjects_with_time)
-
-data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
-schedules: list[ListOfCoursesWithTime] = data_generator.generate_schedules(data_sorter.subjects_with_time)
-# data_generator.display_all_possible_schedules(schedules)
-
-ranked_schedules = data_generator.rank_by_probability(schedules)
-# data_generator.display_all_possible_schedules(ranked_schedules)
-data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
+import os
 
 # ------------------------------------------------------------
 app = Flask(__name__) 
 CORS(app, resources={r"/*": {"origins": "*"}})
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+login_url = "https://crs.upd.edu.ph/"
+all_course_table_schedule_url = ["https://crs.upd.edu.ph/student_registration/class_search/5670", 
+                                 "https://crs.upd.edu.ph/student_registration/class_search/18849", 
+                                 "https://crs.upd.edu.ph/student_registration/class_search/18843",
+                                 "https://crs.upd.edu.ph/student_registration/class_search/19401",
+                                 "https://crs.upd.edu.ph/student_registration/class_search/19395"
+                                 ]
+# ------------------------------------------------------------
+
+
+# ------------------------------------------------------------
+@app.route('/login', methods=['POST'])
+def login() -> Response:
+    credentials = request.json
+    print("Received credentials:", credentials)
+    if credentials:
+        crs_username = credentials['username']
+        crs_password = credentials['password']
+
+        if not crs_username or not crs_password:
+            # Return a failure response with a 400 status code using make_response
+            response = make_response(jsonify({"message": "Missing username or password", "status": "failure"}), 400)
+            return response
+
+        print("Username: ", crs_username)
+        print("Password: ", crs_password)
+
+        # Use crscraper with the login credentials
+        # crs_scraper = CRScraper(login_url, crs_username, crs_password, all_course_table_schedule_url) # This should replace the crscraper variable once the crscraper is working
+        # data = crs_scraper.main() # This should replace the data variable once the crscraper is working
+
+        # For now, we simulate succesful login and scraping data
+        data_class = Data()
+        data = data_class.data()
+
+        if not data:
+            # Return a failure response with a 400 status code using make_response
+            response = make_response(jsonify({"message": "Failed to retrieve course data. Please try again", "status": "failure"}), 400)
+            return response
+        
+        # Proceed with sorting and generating schedules
+        data_sorter = DataSorter(data)
+        data_sorter.sort_data()
+        # data_sorter.display_data(data_sorter.subjects_with_time)
+
+        data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
+        schedules = data_generator.generate_schedules(data_sorter.subjects_with_time)
+        # data_generator.display_all_possible_schedules(schedules)
+
+        ranked_schedules = data_generator.rank_by_probability(schedules)
+        # data_generator.display_all_possible_schedules(ranked_schedules)
+        data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
+
+        return jsonify({"message": "Login successful and schedule data generated", "status": "success"})
+
+    # Return a failure response with a 400 status code using make_response
+    response = make_response(jsonify({"message": "Missing credentials", "status": "failure"}), 400)
+    return response
+
 
 @app.route('/get-schedule', methods=['GET'])
 def get_schedule():
+    if not os.path.isfile('schedules_ranked.csv'):
+        return jsonify({"message": "No schedules found yet.", "status": "failure"})
+    
     with open('schedules_ranked.csv', 'r') as file:
         reader = csv.DictReader(file)
         schedules = [row for row in reader]
