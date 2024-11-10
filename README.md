@@ -100,7 +100,7 @@ A simple schedule maker with probability ranking-based system for University of 
 ### crs_scraper.py 
  - This just scrapes everything from the CRS website then outputs a data in the form of **list[dict[str, str | list[str]]]**.
  - I used this last Midyear CRS enlistment (2023) and outputted the data as ```data.json``` and ```data.txt```.
- - They are raw data, so I really had to use ```data_sorter.py``` to sort important property data. What I'm thinking now is that I should really optimize this by sorting and organizing properties while scraping the website.
+ - They are raw data, so I really had to use ```data_sorter.py``` to sort important property data. What I'm thinking now is that I should really optimize this by sorting and organizing properties while scraping the website (see ```optimized_crscraper.py```).
  - TODO:
    - Still needs good user interface in the Svelte App. We can do something like it updates the website for each scrape that has happened. So, it will have realtime updates.
 
@@ -118,7 +118,7 @@ A simple schedule maker with probability ranking-based system for University of 
 
 
 ### probability_calculator.py
- - This is highly inspired by Leonard Ang's code in his UPD-Course-Probability-Calculator (https://github.com/drew-747/UPD-Course-Probability-Calculator/blob/main/popup.js)
+ - This is highly inspired by Leonard Ang's code in his [UPD-Course-Probability-Calculator](https://github.com/drew-747/UPD-Course-Probability-Calculator/blob/main/popup.js)
  - This calculates probability based on available slots, total demand, and preenlistment priority.
 
 
