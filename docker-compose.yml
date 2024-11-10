@@ -9,6 +9,15 @@ services:
       - "8080:8080"
     environment:
       - FLASK_ENV=development
+    develop:
+      watch:
+        - action: sync
+          path: ./crs_scraper
+          target: /app/crs_scraper
+          ignore:
+            - __pycache__/
+        - action: rebuild
+          path: requirements.txt
 
   frontend:
     build:
@@ -18,3 +27,12 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+    develop:
+      watch: 
+        - action: sync
+          path: ./svelte-frontend/src
+          target: /app/src
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: svelte-frontend/package.json
