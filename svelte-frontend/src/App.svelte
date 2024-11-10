@@ -152,72 +152,79 @@
 
 <main>
 	{#if isAuthenticated}
-		<!-- Input page for Course URLs -->
-		<h1>Enter Course URLs</h1>
-		<input type="text" placeholder="Enter URLs, separated by commas" bind:value={courseURLs} />
-        <button on:click={setURLs}>Set URLs</button>
+		<div class="container">
+			<div class="box" id="course-urls-box">
+				<!-- Input page for Course URLs -->
+				<h1>Enter Course URLs</h1>
+				<input type="text" id="course-urls" placeholder="Enter URLs, separated by commas" bind:value={courseURLs} />
+				<button on:click={setURLs}>Set URLs</button>
 
-		{#if urlMessage == "URLs successfully set!"}
-			<p style="color: green;">{urlMessage}</p>
-		{:else}
-			<p style="color: red;">{urlMessage}</p>
-		{/if}
+				{#if urlMessage == "URLs successfully set!"}
+					<p style="color: green;">{urlMessage}</p>
+				{:else}
+					<p style="color: red;">{urlMessage}</p>
+				{/if}
+			</div>
 
-		<!-- Schedule List -->
-		<h1>Schedule List</h1>
-		<button on:click={getSchedules}>Fetch Schedules</button>
+			<div class="box" id="schedule-list-box">
+				<!-- Schedule List -->
+				<h1>Schedule List</h1>
+				<button on:click={getSchedules}>Fetch Schedules</button>
 
-		<div class="schedule-box-big">
-			{#each scheduleGroups.slice(0, visibleCount) as group}
-				<div class="schedule-box-small">
-					<table class="schedule-table">
-						<thead>
-							<tr>
-								<th>Course</th>
-								<th>Section</th>
-								<th>Day</th>
-								<th>Time</th>
-								<th>Probability</th>
-							</tr>
-						</thead>
-						<tbody>
-							{#each group.schedules as schedule}
-								{#if schedule.Probability}
+				<div class="schedule-box-big">
+					{#each scheduleGroups.slice(0, visibleCount) as group}
+						<div class="schedule-box-small">
+							<table class="schedule-table">
+								<thead>
 									<tr>
-										<td>{schedule.Course}</td>
-										<td>{schedule.Section}</td>
-										<td>{schedule.Day}</td>
-										<td>{schedule.Time}</td>
-										<td>{schedule.Probability}%</td>
+										<th>Course</th>
+										<th>Section</th>
+										<th>Day</th>
+										<th>Time</th>
+										<th>Probability</th>
 									</tr>
-								{:else}
-									<tr>
-										<td>{schedule.Course}</td>
-										<td>{schedule.Section}</td>
-										<td>{schedule.Day}</td>
-										<td>{schedule.Time}</td>
-										<td>{schedule.Probability}</td>
+								</thead>
+								<tbody>
+									{#each group.schedules as schedule}
+										{#if schedule.Probability}
+											<tr>
+												<td>{schedule.Course}</td>
+												<td>{schedule.Section}</td>
+												<td>{schedule.Day}</td>
+												<td>{schedule.Time}</td>
+												<td>{schedule.Probability}%</td>
+											</tr>
+										{:else}
+											<tr>
+												<td>{schedule.Course}</td>
+												<td>{schedule.Section}</td>
+												<td>{schedule.Day}</td>
+												<td>{schedule.Time}</td>
+												<td>{schedule.Probability}</td>
+											</tr>
+										{/if}
+									{/each}
+									<tr class="average-row">
+										{#if group.averageProbability == "N/A"}
+											<td colspan="4"><strong>Average Probability</strong></td>
+											<td><strong>{group.averageProbability}</strong></td>
+										{:else}
+											<td colspan="4"><strong>Average Probability</strong></td>
+											<td><strong>{group.averageProbability}%</strong></td>
+										{/if}
 									</tr>
-								{/if}
-							{/each}
-							<tr class="average-row">
-								{#if group.averageProbability == "N/A"}
-									<td colspan="4"><strong>Average Probability</strong></td>
-									<td><strong>{group.averageProbability}</strong></td>
-								{:else}
-									<td colspan="4"><strong>Average Probability</strong></td>
-									<td><strong>{group.averageProbability}%</strong></td>
-								{/if}
-							</tr>
-						</tbody>
-					</table>
-					<br />
+								</tbody>
+							</table>
+							<br />
+						</div>
+					{/each}
+					{#if visibleCount < scheduleGroups.length}
+						<button on:click={showMore}>Show More</button>
+					{/if}
 				</div>
-			{/each}
+			</div>	
 		</div>
-		{#if visibleCount < scheduleGroups.length}
-			<button on:click={showMore}>Show More</button>
-		{/if}
+
 	{:else}
 		<!-- Login page -->
 		<h1>Login</h1>
@@ -316,7 +323,45 @@
 	/* ----------------------------------------- */
 
 
+	.container {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	.box {
+		width: 45%;
+		padding: 20px;
+		border: 2px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		background-color: #f9f9f9;
+	}
+
+	/* --------------- For course URLs --------------- */
+	/* #course-urls-box {
+		background-color: #e7f7ff;
+		height: 600px;
+	} */
+
+	#course-urls {
+		width: 100%;
+		padding: 10px;
+		margin-top: 10px;
+		font-size: 16px;
+		border-radius: 5px;
+		border: 1px solid #ddd;
+	}
+	/* ----------------------------------------------- */
+	
+
 	/* -------------- Schedule List ------------ */
+	/* #schedule-list-box {
+		background-color: #eaf9e7;
+		height: 600px;
+	} */
+
 	.schedule-table {
 		width: 100%;
 		max-width: 600px;
