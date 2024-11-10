@@ -12,7 +12,7 @@ This project is a simple schedule maker with probability ranking-based system fo
 
 <br />
 
-## Replication
+## Replication (If no docker)
  1. Go to the terminal and type the following...
  2. Clone the repository
     ```
