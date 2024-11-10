@@ -8,7 +8,7 @@ _Indecisive ka ba sa pagpili ng mga schedule? O eto ang sagot diyan._
 
 This project is a simple schedule maker with probability ranking-based system for University of the Philippines Diliman's [Computerized Registration System (CRS)](https://crs.upd.edu.ph/). Basically, it generates all possible schedule you can make. You just have to input your CRS login credentials, and courseURLs in this format ```https://crs.upd.edu.ph/student_registration/class_search/5670```.
 
-**_Note: This project is still UNDER DEVELOPMENT._**
+**_Note: This project is still UNDER DEVELOPMENT. Feel free to contribute din!_** 
 
 <br />
 
