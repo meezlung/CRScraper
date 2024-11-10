@@ -143,6 +143,6 @@ https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00
 <br />
 
 # Mga Kulang Pa:
- - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/)
- - I think there should be a Login Page sa Svelte App. This is to use the credentials sa CRScraper. Link then test locally.
+ - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks (Still don't know how to implement)
+ - There should be a ```crscraper.py``` authenticator for each input of username, password, and courseURL, depending how the CRS website responded to those input.
  - If kaya, host sana 'yung app sa internet.
