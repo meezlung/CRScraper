@@ -1,0 +1,21 @@
+# Dockerfile.frontend
+# Use a Node.js image as a parent image
+FROM node:18
+
+# Set the working directory for the frontend
+WORKDIR /app
+
+# Copy frontend files to the container
+COPY svelte-frontend /app
+
+# Install frontend dependencies and build the Svelte app
+RUN npm install && npm run build
+
+# Install a simple HTTP server to serve the frontend
+RUN npm install -g serve
+
+# Expose the frontend port (e.g., 3000)
+EXPOSE 3000
+
+# Serve the built frontend from the `public` folder
+CMD ["serve", "-s", "public", "-l", "3000"]

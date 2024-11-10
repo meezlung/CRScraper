@@ -1,0 +1,19 @@
+# Dockerfile.backend
+# Use an official Python runtime as a parent image
+FROM python:3.11
+
+# Set the working directory for the backend
+WORKDIR /app
+
+# Copy backend files to the container
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the backend source code
+COPY . /app
+
+# Expose the backend port (e.g., 5000)
+EXPOSE 8080
+
+# Run the backend application
+CMD ["python", "crs_main.py"]
