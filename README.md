@@ -1,9 +1,19 @@
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/ded48b7a-1bd6-4eb4-98bf-dacc0de85c9b" alt="upd-logo-2019" width="150"/>
+
+
+<div align = "center">
+  <img src="https://github.com/user-attachments/assets/66ba7847-24ca-4f33-9fd5-930abc59d87b" alt="upd-logo-2019" width="200"/>
 </div>
 
 # crs_scraper
 A simple schedule maker with probability ranking-based system for University of the Philippines Diliman's [Computerized Registration System (CRS)](https://crs.upd.edu.ph/).
+
+<br />
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/975ebf11-0eaf-4a2c-b288-2fb5b3492a87" alt="upd-crs" width="500"/>
+</div>
+
+<br />
 
 **_Note: This project is still UNDER DEVELOPMENT._**
 
