@@ -135,8 +135,5 @@ A simple schedule maker with probability ranking-based system for University of 
 <br />
 
 # Mga Kulang Pa:
- - Fix some property of schedules 
  - Ranking system
-   - Based on available slots and demands  
-   - RUPP Linking?  
- - App interface (probably we'll use Svelte)
+   - based on [RUPP Linking](https://rupp.onrender.com/)?
