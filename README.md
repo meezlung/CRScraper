@@ -120,7 +120,7 @@ This project is a simple schedule maker with probability ranking-based system fo
 
 
 ### probability_calculator.py
- - This is highly inspired by Leonard Ang's code in his [UPD-Course-Probability-Calculator](https://github.com/drew-747/UPD-Course-Probability-Calculator/blob/main/popup.js)
+ - This is highly inspired by _**Leonard Ang**_'s code in his [UPD-Course-Probability-Calculator](https://github.com/drew-747/UPD-Course-Probability-Calculator/blob/main/popup.js)
  - This calculates probability based on available slots, total demand, and preenlistment priority.
  - I think this should not be the only factor in deciding which ranks the best schedule.
 
