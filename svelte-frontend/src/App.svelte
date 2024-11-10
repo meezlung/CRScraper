@@ -1,4 +1,35 @@
 <script>
+	import { onMount } from 'svelte';
+	// --------------- For login ---------------
+	let crs_username = '';
+	let crs_password = '';
+	let isAuthenticated = false;
+	let errorMessage = '';
+
+	async function handleLogin() {
+		try {
+			const res = await fetch('http://localhost:8080/login', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ username: crs_username, password: crs_password })  // Corrected keys here
+			});
+			const result = await res.json();
+
+			if (result.status === "success") {
+				isAuthenticated = true;
+				await getSchedules(); // Fetch schedules upon successful login
+			} else {
+				errorMessage = 'Login failed. Please check your credentials.';
+			}
+		} catch (error) {
+			errorMessage = 'Error logging in. Please try again.';
+			console.error(error);
+		}
+	}
+	// -----------------------------------------
+
 	let schedules = [];
 	let scheduleGroups = [];
 	let visibleCount = 3;
@@ -58,62 +89,156 @@
 </script>
 
 <main>
-	<h1>Schedule List</h1>
-	<div class="schedule-box-big">
-		{#each scheduleGroups.slice(0, visibleCount) as group}
-			<div class="schedule-box-small">
-				<table class="schedule-table">
-					<thead>
-						<tr>
-							<th>Course</th>
-							<th>Section</th>
-							<th>Day</th>
-							<th>Time</th>
-							<th>Probability</th>
-						</tr>
-					</thead>
-					<tbody>
-						{#each group.schedules as schedule}
-							{#if schedule.Probability}
-								<tr>
-									<td>{schedule.Course}</td>
-									<td>{schedule.Section}</td>
-									<td>{schedule.Day}</td>
-									<td>{schedule.Time}</td>
-									<td>{schedule.Probability}%</td>
-								</tr>
-							{:else}
-								<tr>
-									<td>{schedule.Course}</td>
-									<td>{schedule.Section}</td>
-									<td>{schedule.Day}</td>
-									<td>{schedule.Time}</td>
-									<td>{schedule.Probability}</td>
-								</tr>
-							{/if}
-						{/each}
-						<tr class="average-row">
-							{#if group.averageProbability === 'N/A'}
-								<td colspan="4"><strong>Average Probability</strong></td>
-								<td><strong>{group.averageProbability}</strong></td>
-							{:else}
-								<td colspan="4"><strong>Average Probability</strong></td>
-								<td><strong>{group.averageProbability}%</strong></td>
-							{/if}
-						</tr>
-					</tbody>
-				</table>
-				<br />
+	{#if isAuthenticated}
+		<h1>Schedule List</h1>
+		<div class="schedule-box-big">
+			{#each scheduleGroups.slice(0, visibleCount) as group}
+				<div class="schedule-box-small">
+					<table class="schedule-table">
+						<thead>
+							<tr>
+								<th>Course</th>
+								<th>Section</th>
+								<th>Day</th>
+								<th>Time</th>
+								<th>Probability</th>
+							</tr>
+						</thead>
+						<tbody>
+							{#each group.schedules as schedule}
+								{#if schedule.Probability == "-100.0"}
+									<tr>
+										<td>{schedule.Course}</td>
+										<td>{schedule.Section}</td>
+										<td>{schedule.Day}</td>
+										<td>{schedule.Time}</td>
+										<td>{schedule.Probability}</td>
+									</tr>
+								{:else}
+									<tr>
+										<td>{schedule.Course}</td>
+										<td>{schedule.Section}</td>
+										<td>{schedule.Day}</td>
+										<td>{schedule.Time}</td>
+										<td>{schedule.Probability}%</td>
+									</tr>
+								{/if}
+							{/each}
+							<tr class="average-row">
+								{#if group.averageProbability == "N/A"}
+									<td colspan="4"><strong>Average Probability</strong></td>
+									<td><strong>{group.averageProbability}</strong></td>
+								{:else}
+									<td colspan="4"><strong>Average Probability</strong></td>
+									<td><strong>{group.averageProbability}%</strong></td>
+								{/if}
+							</tr>
+						</tbody>
+					</table>
+					<br />
+				</div>
+			{/each}
+		</div>
+		{#if visibleCount < scheduleGroups.length}
+			<button on:click={showMore}>Show More</button>
+		{/if}
+	{:else}
+		<h1>Login</h1>
+		<form on:submit|preventDefault={handleLogin}>
+			<div>
+				<label for="username">Username:</label>
+				<input type="text" id="username" bind:value={crs_username} required />
 			</div>
-		{/each}
-	</div>
-
-	{#if visibleCount < scheduleGroups.length}
-		<button on:click={showMore}>Show More</button>
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" id="password" bind:value={crs_password} required />
+			</div>
+			<button type="submit">Login</button>
+			{#if errorMessage}
+				<p style="color: red;">{errorMessage}</p>
+			{/if}
+		</form>
 	{/if}
 </main>
 
 <style>
+	/* --------------- For login --------------- */
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #f9f9f9;
+		border: 1px solid #ddd;
+		padding: 2em;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	label {
+		margin-bottom: 0.5em;
+		font-weight: bold;
+		color: #333;
+		font-size: 1em;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		padding: 0.75em;
+		margin-bottom: 1em;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-size: 1em;
+		box-sizing: border-box;
+		transition: border-color 0.3s;
+	}
+
+
+	input[type="text"]:focus,
+	input[type="password"]:focus {
+		border-color: #ff3e00;
+		outline: none;
+		box-shadow: 0 0 5px rgba(255, 62, 0, 0.2);
+	}
+	
+	button[type="submit"] {
+		width: 100%;
+		padding: 0.75em;
+		border: none;
+		background-color: #ff3e00;
+		color: white;
+		font-size: 1em;
+		font-weight: bold;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #e53600;
+	}
+
+	/* Error message styling */
+	p[style="color: red;"] {
+		color: #ff4d4d;
+		margin-top: 1em;
+		font-size: 0.9em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	/* Responsive styling */
+	@media (min-width: 640px) {
+		main {
+			max-width: none;
+		}
+	}
+	/* ----------------------------------------- */
+
+
+	/* -------------- Schedule List ------------ */
 	.schedule-table {
 		width: 100%;
 		max-width: 600px;
@@ -191,4 +316,5 @@
 			max-width: none;
 		}
 	}
+	/* ----------------------------------------- */
 </style>
