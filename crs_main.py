@@ -61,37 +61,6 @@ def login() -> Response:
     response = make_response(jsonify({"message": "Missing credentials", "status": "failure"}), 400)
     return response
 
-    #     # crs_scraper = CRScraper(login_url, crs_username, crs_password, all_course_table_schedule_url) # This should replace the crscraper variable once the crscraper is working
-    #     # data = crs_scraper.main() # This should replace the data variable once the crscraper is working
-
-    #     # For now, we simulate succesful login and scraping data
-    #     data_class = Data()
-    #     data = data_class.data()
-
-    #     if not data:
-    #         # Return a failure response with a 400 status code using make_response
-    #         response = make_response(jsonify({"message": "Failed to retrieve course data. Please try again", "status": "failure"}), 400)
-    #         return response
-        
-    #     # Proceed with sorting and generating schedules
-    #     data_sorter = DataSorter(data)
-    #     data_sorter.sort_data()
-    #     # data_sorter.display_data(data_sorter.subjects_with_time)
-
-    #     data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
-    #     schedules = data_generator.generate_schedules(data_sorter.subjects_with_time)
-    #     # data_generator.display_all_possible_schedules(schedules)
-
-    #     ranked_schedules = data_generator.rank_by_probability(schedules)
-    #     # data_generator.display_all_possible_schedules(ranked_schedules)
-    #     data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
-
-    #     return jsonify({"message": "Login successful and schedule data generated", "status": "success"})
-
-    # # Return a failure response with a 400 status code using make_response
-    # response = make_response(jsonify({"message": "Missing credentials", "status": "failure"}), 400)
-    # return response
-
 
 @app.route('/set-urls', methods=['POST'])
 def set_urls() -> Response:
@@ -167,6 +136,20 @@ def get_schedule():
     return jsonify(schedules)
 
 if __name__ == '__main__':
+    # data_class = Data()
+    # data = data_class.data()
+
+    # data_sorter = DataSorter(data)
+    # data_sorter.sort_data()
+    # # data_sorter.display_data(data_sorter.subjects_with
+
+    # data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
+    # schedules = data_generator.generate_schedules(data_sorter.subjects_with_time)
+    # # data_generator.display_all_possible_schedules(schedules)
+
+    # ranked_schedules = data_generator.rank_by_probability(schedules)
+    # # data_generator.display_all_possible_schedules(ranked_schedules)
+    # data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
     app.run(host='0.0.0.0', port=8080)
 # ------------------------------------------------------------
 
