@@ -2,7 +2,7 @@ from typing import TypeAlias
 from datetime import datetime
 import json
 import csv
-from probability_calculator import ProbabilityCalculator
+from crs_scraper.probability_calculator import ProbabilityCalculator
 
 Course: TypeAlias = str
 Section: TypeAlias = str
