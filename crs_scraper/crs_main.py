@@ -1,6 +1,7 @@
 from crs_data import Data
 from data_sorter import DataSorter, ScheduleGenerator, ListOfCoursesWithTime
-
+from flask import Flask, jsonify
+import csv
 
 # ------------------------------------------------------------
 # from crscraper import CRScraper
@@ -22,7 +23,7 @@ from data_sorter import DataSorter, ScheduleGenerator, ListOfCoursesWithTime
 # ------------------------------------------------------------
 
 
-data_class = Data()
+data_class = Data() 
 data: list[dict[str, str | list[str]]] = data_class.data()
 
 data_sorter = DataSorter(data)
@@ -31,23 +32,23 @@ data_sorter.sort_data()
 
 data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
 schedules: list[ListOfCoursesWithTime] = data_generator.generate_schedules(data_sorter.subjects_with_time)
-data_generator.display_all_possible_schedules(schedules)
-data_generator.convert_to_csv(schedules)
+# data_generator.display_all_possible_schedules(schedules)
 
+ranked_schedules = data_generator.rank_by_probability(schedules)
+data_generator.display_all_possible_schedules(ranked_schedules)
+data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
 
 # ------------------------------------------------------------
-# from flask import Flask, jsonify
-# import csv
+app = Flask(__name__) 
 
-# app = Flask(__name__)
+@app.route('/get-schedule', methods=['GET'])
+def get_schedule():
+    with open('schedules_ranked.csv', 'r') as file:
+        reader = csv.DictReader(file)
+        schedules = [row for row in reader]
+    return jsonify(schedules)
 
-# @app.route('/get-schedule', methods=['GET'])
-# def get_schedule():
-#     with open('schedules.csv', 'r') as file:
-#         reader = csv.DictReader(file)
-#         schedules = [row for row in reader]
-#     return jsonify(schedules)
-
-# if __name__ == '__main__':
-#     app.run(debug=True, port=8080)
+if __name__ == '__main__':
+    app.run(debug=True, port=8080)
 # ------------------------------------------------------------
+
