@@ -14,7 +14,7 @@ A simple schedule maker with probability ranking-based system for University of 
  1. Go to the terminal and type the following...
  2. Clone the repository
     ```
-    git clone https://github.com/meezlung/crs_scraper.git
+    git clone https://github.com/meezlung/CRScraper.git
     ```
 
  3. Go to the directory
@@ -76,7 +76,7 @@ A simple schedule maker with probability ranking-based system for University of 
 ## If you want to use Docker for Easy Development
  1. Clone the repository
     ```
-    git clone https://github.com/meezlung/crs_scraper.git
+    git clone https://github.com/meezlung/CRScraper.git
     ```
 
  2. Build Docker
