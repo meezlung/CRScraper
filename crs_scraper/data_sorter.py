@@ -59,7 +59,7 @@ class DataSorter:
                     "Total Slots": self.get_total_slots(str(d["Available Slots / Total Slots"])),
                     "Demand": self.get_demand(str(d["Demand"])),
                     "Credits": self.calculate_total_credits(d["Credits"]),
-                    "Probability": self.ProbabilityCalculator.calculate_probability("regular", self.get_available_slots(str(d["Available Slots / Total Slots"])), self.get_demand(str(d["Demand"])), True),
+                    "Probability": round(self.ProbabilityCalculator.calculate_probability("regular", self.get_available_slots(str(d["Available Slots / Total Slots"])), self.get_demand(str(d["Demand"])), True), 4) * 100,
                     "Instructors": self.format_instructions(d["Class Name / Instructor(s)"])[i],
                 })
             else:
@@ -284,7 +284,7 @@ class ScheduleGenerator:
                             if "Probability" in entry and isinstance(entry["Probability"], (int, float)):
                                 if entry["Probability"]:
                                     probabilities.append(float(entry["Probability"]))
-        
+    
         return sum(probabilities) / len(probabilities) if probabilities else 0.0
 
     def rank_by_probability(self, all_schedules: list[ListOfCoursesWithTime]) -> list[ListOfCoursesWithTime]:
