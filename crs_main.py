@@ -1,10 +1,11 @@
-from crs_data import Data
-from data_sorter import DataSorter, ScheduleGenerator, ListOfCoursesWithTime
+from crs_scraper.crs_data import Data
+from crs_scraper.data_sorter import DataSorter, ScheduleGenerator, ListOfCoursesWithTime
 from flask import Flask, jsonify
+from flask_cors import CORS
 import csv
 
 # ------------------------------------------------------------
-# from crscraper import CRScraper
+# from crs_scraper.crscraper import CRScraper
 
 # login_url = "https://crs.upd.edu.ph/"
 # all_course_table_schedule_url = ["https://crs.upd.edu.ph/student_registration/class_search/5670", 
@@ -35,11 +36,12 @@ schedules: list[ListOfCoursesWithTime] = data_generator.generate_schedules(data_
 # data_generator.display_all_possible_schedules(schedules)
 
 ranked_schedules = data_generator.rank_by_probability(schedules)
-data_generator.display_all_possible_schedules(ranked_schedules)
+# data_generator.display_all_possible_schedules(ranked_schedules)
 data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
 
 # ------------------------------------------------------------
 app = Flask(__name__) 
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/get-schedule', methods=['GET'])
 def get_schedule():
@@ -49,6 +51,6 @@ def get_schedule():
     return jsonify(schedules)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(host='0.0.0.0', port=8080)
 # ------------------------------------------------------------
 
