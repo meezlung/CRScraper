@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+    import { get } from 'svelte/store';
 	// --------------- For login ---------------
 	let crs_username = '';
 	let crs_password = '';
@@ -19,7 +20,7 @@
 
 			if (result.status === "success") {
 				isAuthenticated = true;
-				await getSchedules(); // Fetch schedules upon successful login
+				// await getSchedules(); // Fetch schedules upon successful login
 			} else {
 				errorMessage = 'Login failed. Please check your credentials.';
 			}
@@ -30,14 +31,74 @@
 	}
 	// -----------------------------------------
 
+
+	// ----------- For setting URLS ------------
+	let courseURLs = '';
+	let urlMessage = '';
+	let urlsSet = false;
+
+	async function setURLs() {
+		// Check if the input is empty
+		if (!courseURLs.trim()) {
+			urlMessage = "Please enter at least one URL before setting.";
+			return; // Exit the function early if the input is empty
+		}
+
+		try {
+			const res = await fetch('http://localhost:8080/set-urls', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ links: courseURLs })
+			});
+			const result = await res.json();
+
+			if (result.status === "success") {
+				urlMessage = "URLs successfully set!";
+				urlsSet = true; // Mark URLs as set
+			} else {
+				urlMessage = "Failed to set URLs. Please check your input.";
+			}
+		} catch (error) {
+			urlMessage = "Error setting URLs. Please try again.";
+			console.error(error);
+		}
+	}
+	// -----------------------------------------
+
+
+	// --------- For getting schedules ----------
 	let schedules = [];
 	let scheduleGroups = [];
 	let visibleCount = 3;
 
 	async function getSchedules() {
-		const res = await fetch('http://localhost:8080/get-schedule');
-		schedules = await res.json();
-		groupSchedules();
+		if (!urlsSet) {
+			urlMessage = "Please set course URLs first before fetching schedules.";
+			return; // Exit the function early if URLs are not set
+		}
+
+		try {
+			const scrapeResponse = await fetch('http://localhost:8080/scrape', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
+			const scrapeResult = await scrapeResponse.json();
+
+			if (scrapeResult.status === "success") {
+				const scheduleResponse = await fetch('http://localhost:8080/get-schedule');
+				schedules = await scheduleResponse.json();
+				groupSchedules();
+			} else {
+				urlMessage = "Failed to generate schedule data.";
+			}
+		} catch (error) {
+			urlMessage = "Failed to generate schedule data.";
+			console.error('Error during scraping or fetching schedules:', error);
+		}
 	}
 
 	function groupSchedules() {
@@ -81,16 +142,31 @@
 		return validSchedules.length > 0 ? (total / validSchedules.length).toFixed(4) : 'N/A';
 	}
 
-	getSchedules();
+	// getSchedules(); // Fetch schedules upon component mount
 
 	function showMore() {
 		visibleCount += 5;
 	}
+	// -----------------------------------------
 </script>
 
 <main>
 	{#if isAuthenticated}
+		<!-- Input page for Course URLs -->
+		<h1>Enter Course URLs</h1>
+		<input type="text" placeholder="Enter URLs, separated by commas" bind:value={courseURLs} />
+        <button on:click={setURLs}>Set URLs</button>
+
+		{#if urlMessage == "URLs successfully set!"}
+			<p style="color: green;">{urlMessage}</p>
+		{:else}
+			<p style="color: red;">{urlMessage}</p>
+		{/if}
+
+		<!-- Schedule List -->
 		<h1>Schedule List</h1>
+		<button on:click={getSchedules}>Fetch Schedules</button>
+
 		<div class="schedule-box-big">
 			{#each scheduleGroups.slice(0, visibleCount) as group}
 				<div class="schedule-box-small">
@@ -106,13 +182,13 @@
 						</thead>
 						<tbody>
 							{#each group.schedules as schedule}
-								{#if schedule.Probability == "-100.0"}
+								{#if schedule.Probability}
 									<tr>
 										<td>{schedule.Course}</td>
 										<td>{schedule.Section}</td>
 										<td>{schedule.Day}</td>
 										<td>{schedule.Time}</td>
-										<td>{schedule.Probability}</td>
+										<td>{schedule.Probability}%</td>
 									</tr>
 								{:else}
 									<tr>
@@ -120,7 +196,7 @@
 										<td>{schedule.Section}</td>
 										<td>{schedule.Day}</td>
 										<td>{schedule.Time}</td>
-										<td>{schedule.Probability}%</td>
+										<td>{schedule.Probability}</td>
 									</tr>
 								{/if}
 							{/each}
@@ -143,7 +219,9 @@
 			<button on:click={showMore}>Show More</button>
 		{/if}
 	{:else}
+		<!-- Login page -->
 		<h1>Login</h1>
+		<h2>These login credentials will be used for logging in your CRS and extract enlistment courses.</h2>
 		<form on:submit|preventDefault={handleLogin}>
 			<div>
 				<label for="username">Username:</label>
