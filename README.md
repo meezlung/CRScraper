@@ -151,4 +151,6 @@ https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks (Still don't know how to implement)
  - There should be a ```crscraper.py``` authenticator for each input of username, password, and courseURL, depending how the CRS website responded to those input.
  - If kaya, host sana 'yung app sa internet.
- - Mas epic din kung iupload sa Google Extension so it's accessible by many (Possible ideas: [WASM](https://python-forum.io/thread-41455.html), [Brython or Rapydscript](https://pythonspot.com/create-a-chrome-plugin-with-python/)).
+ - Mas epic din kung iupload sa Google Extension so it's accessible by many.
+ - I still need a way to host my backend, frontend online.
+   - I think I need to install Linux server on a laptop then try to host from there. 
