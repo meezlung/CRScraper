@@ -153,4 +153,5 @@ https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96
  - If kaya, host sana 'yung app sa internet.
  - Mas epic din kung iupload sa Google Extension so it's accessible by many.
  - I still need a way to host my backend, frontend online.
-   - I think I need to install Linux server on a laptop then try to host from there. 
+   - I think I need to install Linux server on a laptop then try to host from there.
+ - I think we need to scrape Preenlistment Priority as well to feed it into the Course Probability Calculator
