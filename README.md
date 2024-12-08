@@ -34,7 +34,7 @@ This project is a simple schedule maker with probability ranking-based system fo
     python crs_main.py
     ```
 
- 6. Before starting front-end, install npm (if you haven't).
+ 6. On a separate terminal and before starting front-end, install npm (if you haven't).
     ```
     # For Windows
     winget install OpenJS.NodeJS
