@@ -9,6 +9,7 @@ import os
 # ------------------------------------------------------------
 app = Flask(__name__) 
 CORS(app, resources={r"/*": {"origins": "*"}})
+app.config['DEBUG'] = True
 # ------------------------------------------------------------
 
 
@@ -43,15 +44,14 @@ def login() -> Response:
             response = make_response(jsonify({"message": "Missing username or password", "status": "failure"}), 400)
             return response
 
-        print("Username: ", crs_username)
-        print("Password: ", crs_password)
-
         crs_username_global = crs_username
         crs_password_global = crs_password
 
         # Use crscraper with the login credentials
         crs_scraper = CRScraper(login_url, crs_username, crs_password, all_course_table_schedule_url)
         crs_scraper.login_into_crs() # Just to authenticate the user
+
+        app.logger.debug(f"Login successful as {crs_username}!")
     
         # Return a success response with a 200 status code using make_response
         response = make_response(jsonify({"message": "Login successful", "status": "success"}), 200)

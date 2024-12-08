@@ -53,6 +53,8 @@ class CRScraper:
         login_response = self.session.post(self.login_url, data=payload)
         login_response.raise_for_status()  # Ensure the login was successful
 
+        if "Login Error" in login_response.text:  # Adjust the error message based on the site
+            raise ValueError("Login failed: Invalid username or password")
 
     def access_all_possible_course_schedules(self) -> Optional[list[dict[str, str | list[str]]]]:
         if self.all_course_table_schedule_url:
