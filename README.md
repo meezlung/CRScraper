@@ -16,6 +16,7 @@ This project is a simple schedule maker with probability ranking-based system fo
  1. Clone the repository
     ```
     git clone https://github.com/meezlung/CRScraper.git
+    cd CRScraper/
     ```
 
  2. Build Docker
