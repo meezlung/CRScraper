@@ -1,5 +1,5 @@
 from crs_scraper.crscraper import CRScraper
-from crs_scraper.crs_data import Data
+# from crs_scraper.crs_data import Data
 from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
 from flask import Flask, Response, jsonify, make_response, request
 from flask_cors import CORS
@@ -66,7 +66,7 @@ def login() -> Response:
 def set_urls() -> Response:
     global all_course_table_schedule_url
     data = request.get_json()
-    print("Received data:", data)
+    app.logger.debug(f"Received data {data}!")
 
     # Retrieve and store the course links submitted by the user
     if data:
@@ -85,21 +85,25 @@ def set_urls() -> Response:
 @app.route('/scrape', methods=['POST'])
 def scrape() -> Response:
     global crs_username_global, crs_password_global, all_course_table_schedule_url
-    
+
     # TODO: There should be a CRS scraper class that will authenticate the urls
     if not all_course_table_schedule_url:
         # Return a failure response with a 400 status code using make_response
         response = make_response(jsonify({"message": "No course links set yet", "status": "failure"}), 400)
         return response
 
+    app.logger.debug(f"Scraping data for {crs_username_global} with course links {all_course_table_schedule_url}!")
+
     # ----------------------------------------------------------------
-    # crs_scraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url) # This should replace the crscraper variable once the crscraper is working
-    # data = crs_scraper.main() # This should replace the data variable once the crscraper is working
+    crs_scraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url) # This should replace the crscraper variable once the crscraper is working
+    data = crs_scraper.main() # This should replace the data variable once the crscraper is working
     # ----------------------------------------------------------------
 
-    # For now, we simulate succesful login and scraping data
-    data_class = Data()
-    data = data_class.data()
+    app.logger.debug(f"Data scraped successfully! {data}")
+
+    # # For now, we simulate succesful login and scraping data
+    # data_class = Data()
+    # data = data_class.data() 
 
     # Scraping logic
     if not data:
