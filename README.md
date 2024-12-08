@@ -12,70 +12,7 @@ This project is a simple schedule maker with probability ranking-based system fo
 
 <br />
 
-## Replication (If no docker, also I expect you to have Python already!)
- 1. Go to the terminal and type the following...
- 2. Clone the repository
-    ```
-    git clone https://github.com/meezlung/CRScraper.git
-    ```
-
- 3. Go to the directory
-    ```
-    cd CRScraper/
-    ```
-
- 4. Install required dependencies (I recommend using Docker if you don't want to mess up your dependencies. If you just want to use the app, just proceed.)
-    ```
-    pip install -r requirements.txt
-    ```
-    
- 5. Run crs_main.py to start back-end.
-    ```
-    python crs_main.py
-    ```
-
- 6. On a separate terminal and before starting front-end, install npm (if you haven't).
-    ```
-    # For Windows
-    winget install OpenJS.NodeJS
-    
-    # For Debian/Ubuntu
-    sudo apt update
-    sudo apt install npm
-    
-    # For MacOS (using Homebrew)
-    brew install npm
-    ```
-
- 7. To start front-end, go to svelte-frontend and install npm dependencies
-    ```
-    cd svelte-frontend/
-    npm install
-    npm run build
-    ```
-
- 8. Start the Svelte app, and go click the link in the terminal (click the one with http://localhost:...) 
-    ```
-    npm run start
-    ```
-
-    You should see something like this:
-    ```
-          Your application is ready~! 🚀
-    
-      ➡ Port 8080 is taken; using 51315 instead
-    
-      - Local:      http://localhost:51315
-      - Network:    Add `--host` to expose
-    
-    ────────────────── LOGS ──────────────────
-    ```
-
- <br />
-    
-
-
-## If you want to use Docker for Easy Development
+## Docker
  1. Clone the repository
     ```
     git clone https://github.com/meezlung/CRScraper.git
