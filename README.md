@@ -21,7 +21,7 @@ This project is a simple schedule maker with probability ranking-based system fo
 
  3. Go to the directory
     ```
-    cd crs_scraper/
+    cd CRScraper/
     ```
 
  4. Install required dependencies (I recommend using Docker if you don't want to mess up your dependencies. If you just want to use the app, just proceed.)
