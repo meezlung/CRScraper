@@ -14,8 +14,8 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
 
 <br />
 
-## Use the App through [Docker](https://docs.docker.com/desktop/) 
- 1. Download Docker (if you don't have one yet).
+## Use the App through Docker
+ 1. Download [Docker](https://docs.docker.com/desktop/) (if you don't have one yet).
  2. Clone the repository
     ```
     git clone https://github.com/meezlung/CRScraper.git
