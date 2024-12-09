@@ -80,8 +80,6 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
 ### crs_main.py
  - This controls everything, including crs_data.py, data_sorter.py, crs_scraper.py
  - This will also serve as the main backend file for the Svelte frontend.
- - TODO:
-   - Still need to link crs_scraper output here. We can optimize the crs_scraper to already sort on-the-fly.
 
 
 <br />
