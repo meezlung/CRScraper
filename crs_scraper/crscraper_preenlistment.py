@@ -86,16 +86,15 @@ class CRScraper:
                             if len(schedule) == 1:
                                 schedule = schedule[0].split('; ')
 
-                            waitlisting_schedule: str | list[str] = cells[4].get_text(separator="\n", strip=True).split('\n')
-                            restrictions_remarks: str | list[str] = cells[5].get_text(separator="\n", strip=True).split('\n')
+                            restrictions_remarks: str | list[str] = cells[4].get_text(separator="\n", strip=True).split('\n')
 
-                            available_total_slots_raw: str = cells[6].get_text(separator="\n", strip=True)
-                            demand_raw: str = cells[7].get_text(separator="\n", strip=True)
+                            available_total_slots_raw: str = cells[5].get_text(separator="\n", strip=True)
+                            demand_raw: str = cells[6].get_text(separator="\n", strip=True)
                             
                             available_total_slots: str = available_total_slots_raw.replace('\xa0', '').replace('\n', '')
                             demand: str = demand_raw.replace('\xa0', '')
 
-                            status: str = cells[8].get_text(separator="\n", strip=True)
+                            # status: str = cells[8].get_text(separator="\n", strip=True)
 
                             # Store the scraped data in a dictionary
                             row_data: dict[str, str | list[str]] = {
@@ -103,11 +102,10 @@ class CRScraper:
                                 "Class Name / Instructor(s)": class_name_and_instructors,
                                 "Credits": credits,
                                 "Schedule / Room": schedule,
-                                "Waitlisting Schedule": waitlisting_schedule,
                                 "Restrictions / Remarks": restrictions_remarks,
                                 "Available Slots / Total Slots": available_total_slots, 
                                 "Demand": demand,
-                                "Status": status
+                                # "Status": status
                             }
                             
                             self.data.append(row_data)

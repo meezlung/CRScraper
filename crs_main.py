@@ -1,4 +1,4 @@
-from crs_scraper.crscraper import CRScraper
+from crs_scraper.crscraper_preenlistment import CRScraper
 # from crs_scraper.crs_data import Data
 from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
 from flask import Flask, Response, jsonify, make_response, request
@@ -15,6 +15,8 @@ app.config['DEBUG'] = True
 
 # ------------------------------------------------------------
 login_url = "https://crs.upd.edu.ph/"
+
+# 2nd year 1st sem
 # https://crs.upd.edu.ph/student_registration/class_search/5670, https://crs.upd.edu.ph/student_registration/class_search/18849, https://crs.upd.edu.ph/student_registration/class_search/18843, https://crs.upd.edu.ph/student_registration/class_search/19401, https://crs.upd.edu.ph/student_registration/class_search/19395
 # all_course_table_schedule_url = ["https://crs.upd.edu.ph/student_registration/class_search/5670", 
 #                                  "https://crs.upd.edu.ph/student_registration/class_search/18849", 
@@ -22,6 +24,10 @@ login_url = "https://crs.upd.edu.ph/"
 #                                  "https://crs.upd.edu.ph/student_registration/class_search/19401",
 #                                  "https://crs.upd.edu.ph/student_registration/class_search/19395"
 #                                  ]
+
+# 2nd year 2nd sem
+# https://crs.upd.edu.ph/preenlistment/class_search/19405, https://crs.upd.edu.ph/preenlistment/class_search/19398, https://crs.upd.edu.ph/preenlistment/class_search/19403, https://crs.upd.edu.ph/preenlistment/class_search/19404, https://crs.upd.edu.ph/preenlistment/class_search/19480
+
 all_course_table_schedule_url: list[str] = []
 crs_username_global = ""
 crs_password_global = ""
@@ -114,7 +120,7 @@ def scrape() -> Response:
     # Proceed with sorting and generating schedules
     data_sorter = DataSorter(data)
     data_sorter.sort_data()
-    # data_sorter.display_data(data_sorter.subjects_with
+    # data_sorter.display_data(data_sorter.subjects_with_time)
 
     data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
     schedules = data_generator.generate_schedules(data_sorter.subjects_with_time)
@@ -123,6 +129,8 @@ def scrape() -> Response:
     ranked_schedules = data_generator.rank_by_probability(schedules)
     # data_generator.display_all_possible_schedules(ranked_schedules)
     data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
+
+    app.logger.debug(f"Schedules generated and ranked successfully! {ranked_schedules}")
 
     # Return a success response with a 200 status code using make_response
     response = make_response(jsonify({"message": "Schedule data generated", "status": "success"}), 200)
