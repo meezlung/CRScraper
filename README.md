@@ -35,6 +35,19 @@ This project is a simple schedule maker with probability ranking-based system fo
 <br />
 
 
+# Demo
+<!-- https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00 -->
+
+<!-- https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96 -->
+
+
+https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
+
+
+
+
+<br />
+
 ## Overview of the files
 
 ### crs_scraper.py 
@@ -72,15 +85,7 @@ This project is a simple schedule maker with probability ranking-based system fo
 
 <br />
 
-# Demo
-<!-- https://github.com/user-attachments/assets/d52ab5b3-2fb4-4619-aead-3e4819f82a00 -->
 
-
-https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96
-
-
-
-<br />
 
 # Mga Kulang Pa (Pero ewan ko kung gagawin ko pa to):
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks (Still don't know how to implement)
