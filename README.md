@@ -12,14 +12,15 @@ This project is a simple schedule maker with probability ranking-based system fo
 
 <br />
 
-## Use the App through Docker
- 1. Clone the repository
+## Use the App through [Docker](https://docs.docker.com/desktop/) 
+ 1. Download Docker (if you don't have one yet).
+ 2. Clone the repository
     ```
     git clone https://github.com/meezlung/CRScraper.git
     cd CRScraper/
     ```
 
- 2. Build Docker
+ 3. Build Docker (make sure Docker is running at the background)
     ```
     docker-compose up --build
     ```
@@ -29,7 +30,7 @@ This project is a simple schedule maker with probability ranking-based system fo
     docker-compose down
     ```
 
- 3. Go to ``` http://localhost:3000 ```
+ 4. Go to ``` http://localhost:3000 ```
     
 
 <br />
