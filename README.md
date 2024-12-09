@@ -85,7 +85,7 @@ https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96
 
 <br />
 
-# Mga Kulang Pa:
+# Mga Kulang Pa (Pero ewan ko kung gagawin ko pa to):
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks (Still don't know how to implement)
  - There should be a ```crscraper.py``` authenticator for each input of username, password, and courseURL, depending how the CRS website responded to those input.
  - If kaya, host sana 'yung app sa internet.
