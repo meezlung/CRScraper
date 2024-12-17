@@ -94,7 +94,7 @@ class DataSorter:
 
     def calculate_total_credits(self, credits: str | list[str]) -> float:
         """ Calculates the total credits from the credits string. Credits is a list of strings, usually with 1 or more than 1 element. """
-        return sum([float(credit) for credit in credits])
+        return sum([float(credit.strip('()')) for credit in credits])
 
     def format_instructions(self, instructors: str | list[str]) -> str | tuple[str, str]:
         """ Formats the instructors string or list of instructors. """
@@ -133,6 +133,7 @@ class ScheduleGenerator:
             "TTh": ["Tuesday", "Thursday"],
             "WF": ["Wednesday", "Friday"],
             "TF": ["Tuesday", "Friday"],
+            "MW": ["Monday", "Wednesday"],
         }
 
     def parse_time(self, time: str) -> tuple[datetime, datetime]:
