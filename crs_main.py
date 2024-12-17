@@ -17,16 +17,20 @@ app.config['DEBUG'] = True
 login_url = "https://crs.upd.edu.ph/"
 
 # 2nd year 1st sem
-# https://crs.upd.edu.ph/student_registration/class_search/5670, https://crs.upd.edu.ph/student_registration/class_search/18849, https://crs.upd.edu.ph/student_registration/class_search/18843, https://crs.upd.edu.ph/student_registration/class_search/19401, https://crs.upd.edu.ph/student_registration/class_search/19395
-# all_course_table_schedule_url = ["https://crs.upd.edu.ph/student_registration/class_search/5670", 
-#                                  "https://crs.upd.edu.ph/student_registration/class_search/18849", 
-#                                  "https://crs.upd.edu.ph/student_registration/class_search/18843",
-#                                  "https://crs.upd.edu.ph/student_registration/class_search/19401",
-#                                  "https://crs.upd.edu.ph/student_registration/class_search/19395"
+# https://crs.upd.edu.ph/preenlistment/class_search/5670, https://crs.upd.edu.ph/preenlistment/class_search/18849, https://crs.upd.edu.ph/preenlistment/class_search/18843, https://crs.upd.edu.ph/preenlistment/class_search/19401, https://crs.upd.edu.ph/preenlistment/class_search/19395
+# all_course_table_schedule_url = ["https://crs.upd.edu.ph/preenlistment/class_search/5670", 
+#                                  "https://crs.upd.edu.ph/preenlistment/class_search/18849", 
+#                                  "https://crs.upd.edu.ph/preenlistment/class_search/18843",
+#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19401",
+#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19395"
 #                                  ]
 
 # 2nd year 2nd sem
+# gab
 # https://crs.upd.edu.ph/preenlistment/class_search/19405, https://crs.upd.edu.ph/preenlistment/class_search/19398, https://crs.upd.edu.ph/preenlistment/class_search/19403, https://crs.upd.edu.ph/preenlistment/class_search/19404, https://crs.upd.edu.ph/preenlistment/class_search/19480
+
+# micka
+# https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18913, https://crs.upd.edu.ph/preenlistment/class_search/18916, https://crs.upd.edu.ph/preenlistment/class_search/106, https://crs.upd.edu.ph/preenlistment/class_search/18915, https://crs.upd.edu.ph/preenlistment/class_search/1932
 
 all_course_table_schedule_url: list[str] = []
 crs_username_global = ""
