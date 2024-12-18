@@ -57,7 +57,8 @@ class CRScraper:
             raise ValueError("Login failed: Invalid username or password")
 
     def access_all_possible_course_schedules(self) -> Optional[list[dict[str, str | list[str]]]]:
-        if self.all_course_table_schedule_url:
+        print(f"courseURLs: {self.all_course_table_schedule_url}")
+        if self.all_course_table_schedule_url != ['']:
             for course_url in self.all_course_table_schedule_url:
                 # Access the page
                 response = self.session.get(course_url)
@@ -113,6 +114,7 @@ class CRScraper:
             return self.data
         
         else:
+            raise ValueError("No course URLs provided")
             return None
     
     def print_data(self, data: list[dict[str, str | list[str]]] | None) -> None:
