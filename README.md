@@ -1,4 +1,4 @@
-<div style="display: flex;" align="center">
+x<div style="display: flex;" align="center">
   <img src="https://github.com/user-attachments/assets/66ba7847-24ca-4f33-9fd5-930abc59d87b" alt="upd-logo-2019" width="200"/>
 </div>
 
@@ -44,7 +44,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     python test.py
     ```
     
- 7. The generated ranked schedules will be outputted as a CSV file and will be in the same directory as ```test.py```.
+ 7. The generated ranked schedules will be outputted as ```schedules_ranked_test.csv``` and will be in the same directory as ```test.py```.
 
 <br />
 
