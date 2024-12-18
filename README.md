@@ -22,7 +22,8 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     ```
  2. Search for your preferred courses in CRS and copy paste the input as follows:
     ```
-    all_course_table_schedule_url_cs_test = ["https://crs.upd.edu.ph/preenlistment/class_search/19405", 
+    all_course_table_schedule_url_cs_test = [
+                                      "https://crs.upd.edu.ph/preenlistment/class_search/19405", 
                                      "https://crs.upd.edu.ph/preenlistment/class_search/19398", 
                                      "https://crs.upd.edu.ph/preenlistment/class_search/19403",
                                      "https://crs.upd.edu.ph/preenlistment/class_search/19404",
