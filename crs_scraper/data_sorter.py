@@ -121,6 +121,7 @@ class ScheduleGenerator:
         self.subjects_with_time = subjects_with_time
         self.optimized_schedule = []
 
+        # We need to generalize the code for this because there will be more possible day combinations
         self.days_mapping = {
             "M": ["Monday"],
             "T": ["Tuesday"],
@@ -178,10 +179,9 @@ class ScheduleGenerator:
         return start_time, end_time
 
     def parse_days(self, days: str) -> list[str]:
-        return self.days_mapping[days] # We need to generalize the code for this because there will be more possible day combinations
+        return self.days_mapping[days] 
 
-    def check_conflict(self, accumulated_schedule: list[Schedule], new_schedule: Schedule) -> bool: # Still need to test this
-
+    def check_conflict(self, accumulated_schedule: list[Schedule], new_schedule: Schedule) -> bool: 
         for existing_schedule in accumulated_schedule:
             for entry1 in existing_schedule:
                 for entry2 in new_schedule:
@@ -203,6 +203,7 @@ class ScheduleGenerator:
         
         return False
 
+    # Implement DP here or simply just cache state space
     def backtrack(self, subjects_with_time: ListOfCoursesWithTime, 
                         current_index: int, 
                         current_schedule: ListOfCoursesWithTime, 
@@ -289,7 +290,6 @@ class ScheduleGenerator:
         return sum(probabilities) / len(probabilities) if probabilities else 0.0
 
     def rank_by_probability(self, all_schedules: list[ListOfCoursesWithTime]) -> list[ListOfCoursesWithTime]:
-        # Rank schedules by average probability
         all_schedules.sort(
             key=self.calculate_average_probability,
             reverse=True
