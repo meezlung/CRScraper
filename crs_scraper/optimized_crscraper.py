@@ -62,7 +62,7 @@ class CRScraper:
 
     def access_all_possible_course_schedules(self) -> None:
         print(f"courseURLs: {self.all_course_table_schedule_url}")
-        if self.all_course_table_schedule_url:
+        if self.all_course_table_schedule_url != ['']:
             for course_url in self.all_course_table_schedule_url:
                 response = self.session.get(course_url)
                 response.raise_for_status()
@@ -76,6 +76,7 @@ class CRScraper:
                             self.append_sorted_row_data(cells)
         else:
             raise ValueError("No course URLs provided")
+            return None
 
     def append_sorted_row_data(self, cells: list[Tag]) -> None:
         course, section = self.extract_course_and_section(cells[1].get_text(separator="\n", strip=True).split('\n'))
