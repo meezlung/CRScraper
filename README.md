@@ -44,7 +44,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     python test.py
     ```
     
- 7. The CSV output will be in the same directory as ```test.py```.
+ 7. The generated ranked schedules will be outputted as a CSV file and will be in the same directory as ```test.py```.
 
 <br />
 
