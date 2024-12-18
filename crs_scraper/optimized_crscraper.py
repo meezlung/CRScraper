@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 from typing import Optional, Union
+from crs_scraper.probability_calculator import ProbabilityCalculator
 
 Course = str
 Section = str
@@ -18,6 +19,7 @@ class CRScraper:
         # Start a session
         self.session = requests.Session()
         self.data: ListOfCoursesWithTime = []  # Now in sorted format directly
+        self.probability_calculator = ProbabilityCalculator()
 
     def main(self) -> Optional[ListOfCoursesWithTime]:
         self.login_into_crs()
@@ -59,6 +61,7 @@ class CRScraper:
             raise ValueError("Login failed: Invalid username or password")
 
     def access_all_possible_course_schedules(self) -> None:
+        print(f"courseURLs: {self.all_course_table_schedule_url}")
         if self.all_course_table_schedule_url:
             for course_url in self.all_course_table_schedule_url:
                 response = self.session.get(course_url)
@@ -71,6 +74,8 @@ class CRScraper:
                         cells = row.find_all("td")
                         if cells:
                             self.append_sorted_row_data(cells)
+        else:
+            raise ValueError("No course URLs provided")
 
     def append_sorted_row_data(self, cells: list[Tag]) -> None:
         course, section = self.extract_course_and_section(cells[1].get_text(separator="\n", strip=True).split('\n'))
@@ -90,18 +95,22 @@ class CRScraper:
     def format_schedule(self, cells: list[Tag]) -> Schedule:
         schedule_parts = cells[3].get_text(separator="\n", strip=True).split('\n')
         schedule = schedule_parts[0].split('; ') if len(schedule_parts) == 1 else schedule_parts
-        available_total_slots = cells[6].get_text(separator="\n", strip=True).replace('\xa0', '').replace('\n', '')
-        demand = cells[7].get_text(separator="\n", strip=True).replace('\xa0', '')
+        available_total_slots = cells[5].get_text(separator="\n", strip=True).replace('\xa0', '').replace('\n', '')
+        demand = int(cells[6].get_text(separator="\n", strip=True).replace('\xa0', ''))
+        credits = cells[2].get_text(separator="\n", strip=True).split('\n')
+        available_slots = int(available_total_slots.split("/")[0])
+
 
         return [
             {
                 "Day": sched.split(" ")[0],
                 "Time": sched.split(" ")[1],
                 "Room": sched.split(" ")[2] if len(sched.split(" ")) > 2 else "",
-                "Available Slots": int(available_total_slots.split("/")[0]),
+                "Available Slots": available_slots,
                 "Total Slots": int(available_total_slots.split("/")[1]),
                 "Demand": int(demand),
-                "Credits": sum(float(credit) for credit in cells[2].get_text(separator="\n", strip=True).split('\n')),
-                "Instructors": cells[1].get_text(separator=", ", strip=True).split(', ')[1]
+                "Credits": sum([float(credit.strip('()')) for credit in credits]),
+                "Probability": round(self.probability_calculator.calculate_probability("regular", available_slots, int(demand), True), 4) * 100,
+                "Instructors": cells[1].get_text(separator=", ", strip=True).split(', ')[1],
             } for sched in schedule
         ]
