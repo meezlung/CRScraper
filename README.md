@@ -45,6 +45,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     
  7. The CSV output will be in the same directory as ```test.py```.
 
+<br />
 
 ## Use the App through Docker
  1. Download [Docker](https://docs.docker.com/desktop/) (if you don't have one yet).
