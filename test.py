@@ -34,7 +34,7 @@ all_course_table_schedule_url_test = [""]
 
 filename = "schedules_ranked_test.csv"
 
-crscraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url_cs)
+crscraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url_test)
 data = crscraper.main()
 
 print(data)
