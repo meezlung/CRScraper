@@ -22,8 +22,14 @@ class CRScraper:
         self.probability_calculator = ProbabilityCalculator()
 
     def main(self) -> Optional[ListOfCoursesWithTime]:
+        print("Logging into CRS...")
         self.login_into_crs()
+        print("Logged in successfully.")
+        print()
+        print("Accessing all possible course schedules...")
         self.access_all_possible_course_schedules()
+        print("All possible course schedules accessed.")
+        print()
         return self.data
 
     def login_into_crs(self) -> None:
@@ -61,9 +67,9 @@ class CRScraper:
             raise ValueError("Login failed: Invalid username or password")
 
     def access_all_possible_course_schedules(self) -> None:
-        print(f"courseURLs: {self.all_course_table_schedule_url}")
         if self.all_course_table_schedule_url != ['']:
             for course_url in self.all_course_table_schedule_url:
+                print(f"Accessing {course_url}...")
                 response = self.session.get(course_url)
                 response.raise_for_status()
                 soup = BeautifulSoup(response.text, 'html.parser')
@@ -100,7 +106,6 @@ class CRScraper:
         demand = int(cells[6].get_text(separator="\n", strip=True).replace('\xa0', ''))
         credits = cells[2].get_text(separator="\n", strip=True).split('\n')
         available_slots = int(available_total_slots.split("/")[0])
-
 
         return [
             {
