@@ -96,7 +96,6 @@ def set_urls() -> Response:
 def scrape() -> Response:
     global crs_username_global, crs_password_global, all_course_table_schedule_url
 
-    # TODO: There should be a CRS scraper class that will authenticate the urls
     if not all_course_table_schedule_url:
         # Return a failure response with a 400 status code using make_response
         response = make_response(jsonify({"message": "No course links set yet", "status": "failure"}), 400)
@@ -105,8 +104,8 @@ def scrape() -> Response:
     app.logger.debug(f"Scraping data for {crs_username_global} with course links {all_course_table_schedule_url}!")
 
     # ----------------------------------------------------------------
-    crs_scraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url) # This should replace the crscraper variable once the crscraper is working
-    data = crs_scraper.main() # This should replace the data variable once the crscraper is working
+    crs_scraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url) 
+    data = crs_scraper.main() 
     # ----------------------------------------------------------------
 
     app.logger.debug(f"Data scraped successfully! {data}")
