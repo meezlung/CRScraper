@@ -20,6 +20,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     git clone https://github.com/meezlung/CRScraper.git
     cd CRScraper/
     ```
+    
  2. Search for your preferred courses in CRS and copy paste the input as follows:
     ```
     all_course_table_schedule_url_cs_test = [
@@ -32,12 +33,16 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     # Note: Each URL corresponds to a search result table of a DESIRED COURSE, 
     # obtained after searching for a class in the CRS search bar. You may edit this list as you please.
     ```
- 4. Open ```test.py``` in a text editor, and modify the ```all_course_table_schedule_url_cs_test``` variable.
+    
+ 3. Open ```test.py``` in a text editor, and modify the ```all_course_table_schedule_url_cs_test``` variable.
+    
  5. Feel free to edit the ```filename``` variable as well.
+    
  6. Run ```test.py``` in the terminal.
     ```
     python test.py
     ```
+    
  7. The CSV output will be in the same directory as ```test.py```.
 
 
