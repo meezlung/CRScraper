@@ -78,7 +78,10 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
 <!-- https://github.com/user-attachments/assets/12f6a4ef-b45d-498a-8d60-f4f842129c96 -->
 
 
-Uploading CRScraperSimpleTestingDemo.mp4…
+
+https://github.com/user-attachments/assets/72262755-f894-4e24-82cc-f969d6786785
+
+
 
 https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
 
