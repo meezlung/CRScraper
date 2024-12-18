@@ -39,7 +39,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
     
  5. Feel free to edit the ```filename``` variable as well.
     
- 6. Run ```test.py``` in the terminal.
+ 6. Save the file and run ```test.py``` in the terminal.
     ```
     python test.py
     ```
