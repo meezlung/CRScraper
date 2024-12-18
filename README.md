@@ -1,4 +1,4 @@
-x<div style="display: flex;" align="center">
+<div style="display: flex;" align="center">
   <img src="https://github.com/user-attachments/assets/66ba7847-24ca-4f33-9fd5-930abc59d87b" alt="upd-logo-2019" width="200"/>
 </div>
 
