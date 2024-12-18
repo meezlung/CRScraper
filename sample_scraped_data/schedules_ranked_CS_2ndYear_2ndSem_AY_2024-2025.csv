@@ -1,0 +1,129 @@
+Course,Section,Day,Time,Room,Available Slots,Total Slots,Demand,Credits,Probability,Instructors
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec CAL,12,25,11,3.0,100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec CAL,12,25,11,3.0,100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec PAV,0,25,3,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec CAL,4,25,9,3.0,0.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec CAL,0,25,2,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec CAL,1,25,8,3.0,0.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec CAL,0,25,4,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec CAL,0,25,10,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,16,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL1,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec CAL,3,25,14,3.0,0.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec PAV,0,25,3,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec CAL,4,25,9,3.0,0.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec CAL,0,25,2,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec CAL,1,25,8,3.0,0.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec CAL,0,25,4,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec CAL,0,25,10,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec AECH-ERDT,0,25,20,3.0,-100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec AECH-Accenture,0,22,14,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab AECH-TL2,,,,,,Concealed
+CS 33,WFU,WF,10-11:30AM,lec AECH-Accenture,0,25,14,4.0,-100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab AECH-TL2,,,,,,Concealed
+CS 132,WFW,WF,1-2:30PM,lec AECH-CLR2,0,25,8,3.0,-100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec CAL,3,25,14,3.0,0.0,"GO, CHRISTIAN ALBERT"
