@@ -30,8 +30,9 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
                                      "https://crs.upd.edu.ph/preenlistment/class_search/19404",
                                      "https://crs.upd.edu.ph/preenlistment/class_search/19480",
                                      ] # Sample format for CS 136, CS 21, CS 33, CS 132, and Eng 30
-    # Note: Each URL corresponds to a search result table of a DESIRED COURSE, 
-    # obtained after searching for a class in the CRS search bar. You may edit this list as you please.
+    
+    # Note: Each URL corresponds to a search result table of a DESIRED COURSE.
+    # You may edit this list as you please.
     ```
     
  3. Open ```test.py``` in a text editor, and modify the ```all_course_table_schedule_url_cs_test``` variable.
