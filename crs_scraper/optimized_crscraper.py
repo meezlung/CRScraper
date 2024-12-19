@@ -77,12 +77,17 @@ class CRScraper:
 
                 if table:
                     for row in table.find_all("tr")[1:]:
+                        no_matching = row.get_text(separator="\n", strip=True)
+                        print(no_matching)
+
+                        if no_matching == "No matching results":
+                            raise ValueError("No matching results found or invalid course URL")
+
                         cells = row.find_all("td")
                         if cells:
                             self.append_sorted_row_data(cells)
         else:
             raise ValueError("No course URLs provided")
-            return None
 
     def append_sorted_row_data(self, cells: list[Tag]) -> None:
         course, section = self.extract_course_and_section(cells[1].get_text(separator="\n", strip=True).split('\n'))
