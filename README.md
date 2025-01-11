@@ -140,3 +140,5 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
  - Fix typehints, organize code later.
  - Organize documentation per each function.
  - Feature for utilizing similar subjects.
+ - Ayusin nga tong documentation na toh
+ - Distinguish preenlistment and waitlisting features properly, both in documentation and src codes
