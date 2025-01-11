@@ -142,3 +142,4 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
  - Feature for utilizing similar subjects.
  - Ayusin nga tong documentation na toh
  - Distinguish preenlistment and waitlisting features properly, both in documentation and src codes
+ - Gumawa din ng optimized waitlistment scraper
