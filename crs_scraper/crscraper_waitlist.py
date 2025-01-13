@@ -115,6 +115,7 @@ class CRScraper:
             return self.data
         
         else:
+            raise ValueError("No course URLs provided")
             return None
     
     def print_data(self, data: list[dict[str, str | list[str]]] | None) -> None:
