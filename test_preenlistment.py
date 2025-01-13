@@ -1,4 +1,4 @@
-# Search for your preferred courses in CRS and input the URLs in the list below
+# Search for your preferred courses in CRS's Preenlistment tab and input the URLs in the list below
 
 # sample ME courses
 # https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18913, https://crs.upd.edu.ph/preenlistment/class_search/18916, https://crs.upd.edu.ph/preenlistment/class_search/106, https://crs.upd.edu.ph/preenlistment/class_search/18915
@@ -8,7 +8,7 @@
 
 # from crs_scraper.crscraper_preenlistment import CRScraper
 from crs_scraper.data_sorter import ScheduleGenerator 
-from crs_scraper.optimized_crscraper import CRScraper
+from crs_scraper.optimized_crscraper_preenlistment import CRScraper
 from getpass import getpass # This is used to hide the password input when typing in the terminal (https://docs.python.org/3/library/getpass.html)
 import json
 
@@ -33,7 +33,7 @@ all_course_table_schedule_url_cs = ["https://crs.upd.edu.ph/preenlistment/class_
 
 all_course_table_schedule_url_test = [""]
 
-filename = "schedules_ranked_test.csv"
+filename = "schedules_ranked_test_preenlistment.csv"
 
 crscraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url_cs)
 data = crscraper.main()
