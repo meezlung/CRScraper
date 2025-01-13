@@ -136,9 +136,8 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
  - JavaScript scraper in the future so we can upload to Google Extensions?! If not, host in the internet? Though needs a way to host backend and frontend online (consider homemade Linux server).
  - I think we need to scrape Preenlistment Priority as well to feed it into the Course Probability Calculator
  - Also add criterias/filtering functions for organizing schedules (e.g. no weekend classes, no classes after 4 pm, no class start before 9 per se). **(Still don't know how to implement)**
- - Apply DP to overlapping subproblems in the backtrack function. **(Tinatamad pa)**
- - Fix typehints, organize code later.
+ - Apply DP to overlapping subproblems in the backtrack function. **(Parang hirap pala neto)**
  - Organize documentation per each function.
  - Feature for utilizing similar subjects.
- - Ayusin nga tong documentation na toh
- - Distinguish preenlistment and waitlisting features properly, both in documentation and src codes
+ - Ayusin nga tong documentation na toh.
+ - Distinguish preenlistment and waitlisting features properly, both in documentation and src codes.
