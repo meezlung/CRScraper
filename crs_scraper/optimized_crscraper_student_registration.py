@@ -16,6 +16,11 @@ class CRScraperStudentRegistration:
         self.login_url = login_url
         self.all_course_table_schedule_url = all_course_table_schedule_url
 
+        self.preenlistment_priority = ""
+        self.registration_priority = ""
+
+        self.homepage_url = "https://crs.upd.edu.ph/user/view/classmessages"
+
         # Start a session
         self.session = requests.Session()
         self.data: ListOfCoursesWithTime = []  # Now in sorted format directly
@@ -24,8 +29,13 @@ class CRScraperStudentRegistration:
     def main(self) -> Optional[ListOfCoursesWithTime]:
         print("Logging into CRS...")
         self.login_into_crs()
-        print("Logged in successf4ully.")
+        print("Logged in successfully.")
         print()
+
+        print("Getting priority...")
+        self.get_priority()
+        print()
+
         print("Accessing all possible course schedules...")
         self.access_all_possible_course_schedules()
         print("All possible course schedules accessed.")
@@ -65,6 +75,26 @@ class CRScraperStudentRegistration:
 
         if "Login Error" in login_response.text:  # Adjust the error message based on the site
             raise ValueError("Login failed: Invalid username or password")
+
+    def get_priority(self) -> None:
+        # Scrape the preenlistment priority in the homepage
+        response = self.session.get(self.homepage_url)
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+        table = soup.select_one("html body div#content div#rightcolumn table#registration_details")
+
+        if table:
+            for row in table.find_all("tr"):
+                cells = row.find_all("td")
+                if cells:
+                    if "Preenlistment Priority" in cells[0].get_text(separator="\n", strip=True):
+                        self.preenlistment_priority = cells[1].get_text(separator="\n", strip=True)
+                    elif "Registration Priority" in cells[0].get_text(separator="\n", strip=True):
+                        self.registration_priority = cells[1].get_text(separator="\n", strip=True)
+
+        print(f"Preenlistment Priority: {self.preenlistment_priority}")
+        print(f"Registration Priority: {self.registration_priority}")
 
     def access_all_possible_course_schedules(self) -> None:
         if self.all_course_table_schedule_url != ['']:
@@ -123,7 +153,7 @@ class CRScraperStudentRegistration:
             probability = -100.0
 
         else: # If the subject is open
-            probability = round(self.probability_calculator.calculate_probability("regular", available_slots, int(demand), True), 4) * 100
+            probability = round(self.probability_calculator.calculate_probability(self.registration_priority.lower(), available_slots, int(demand), True), 4) * 100
 
         return [
             {
