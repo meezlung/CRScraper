@@ -34,6 +34,7 @@ class CRScraperPreEnlistment:
 
         print("Getting priority...")
         self.get_priority()
+        print()
 
         print("Accessing all possible course schedules...")
         self.access_all_possible_course_schedules()
