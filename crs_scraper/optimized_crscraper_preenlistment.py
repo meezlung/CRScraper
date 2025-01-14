@@ -9,7 +9,7 @@ Section = str
 Schedule = list[dict[str, str | int | float]]
 ListOfCoursesWithTime = list[dict[Course, list[dict[Section, Schedule]]]]
 
-class CRScraper:
+class CRScraperPreEnlistment:
     def __init__(self, login_url: str, username: str, password: str, all_course_table_schedule_url: list[str]) -> None:
         self.username = username
         self.password = password
@@ -78,7 +78,6 @@ class CRScraper:
                 if table:
                     for row in table.find_all("tr")[1:]:
                         no_matching = row.get_text(separator="\n", strip=True)
-                        print(no_matching)
 
                         if no_matching == "No matching results":
                             raise ValueError("No matching results found or invalid course URL")
