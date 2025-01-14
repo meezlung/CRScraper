@@ -1,6 +1,14 @@
-from crs_scraper.crscraper_preenlistment import CRScraper
+# Unoptimized libraries
+# from crs_scraper.crscraper_preenlistment import CRScraperPreEnlistment
+# from crs_scraper.crscraper_student_registration import CRScraperStudentRegistration
 # from crs_scraper.crs_data import Data
-from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
+# from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
+
+# Optimized libraries
+from crs_scraper.optimized_crscraper_preenlistment import CRScraperPreEnlistment
+from crs_scraper.optimized_crscraper_student_registration import CRScraperStudentRegistration
+from crs_scraper.data_sorter import ScheduleGenerator
+
 from flask import Flask, Response, jsonify, make_response, request
 from flask_cors import CORS
 import csv
@@ -16,14 +24,10 @@ app.config['DEBUG'] = True
 # ------------------------------------------------------------
 login_url = "https://crs.upd.edu.ph/"
 
+# ------------------------------------------------------------
+# preenlistment
 # 2nd year 1st sem
 # https://crs.upd.edu.ph/preenlistment/class_search/5670, https://crs.upd.edu.ph/preenlistment/class_search/18849, https://crs.upd.edu.ph/preenlistment/class_search/18843, https://crs.upd.edu.ph/preenlistment/class_search/19401, https://crs.upd.edu.ph/preenlistment/class_search/19395
-# all_course_table_schedule_url = ["https://crs.upd.edu.ph/preenlistment/class_search/5670", 
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/18849", 
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/18843",
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19401",
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19395"
-#                                  ]
 
 # 2nd year 2nd sem
 # gab
@@ -31,6 +35,16 @@ login_url = "https://crs.upd.edu.ph/"
 
 # micka
 # https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18918, https://crs.upd.edu.ph/preenlistment/class_search/18913, https://crs.upd.edu.ph/preenlistment/class_search/18916, https://crs.upd.edu.ph/preenlistment/class_search/106, https://crs.upd.edu.ph/preenlistment/class_search/18915, https://crs.upd.edu.ph/preenlistment/class_search/1932
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# student registration
+# sample ME courses
+# https://crs.upd.edu.ph/student_registration/class_search/18918, https://crs.upd.edu.ph/student_registration/class_search/18918, https://crs.upd.edu.ph/student_registration/class_search/18913, https://crs.upd.edu.ph/student_registration/class_search/18916, https://crs.upd.edu.ph/student_registration/class_search/106, https://crs.upd.edu.ph/student_registration/class_search/18915
+
+# sample CS courses
+# https://crs.upd.edu.ph/student_registration/class_search/19405, https://crs.upd.edu.ph/student_registration/class_search/19398, https://crs.upd.edu.ph/student_registration/class_search/19403, https://crs.upd.edu.ph/student_registration/class_search/19404, https://crs.upd.edu.ph/student_registration/class_search/19480
+# ------------------------------------------------------------
 
 all_course_table_schedule_url: list[str] = []
 crs_username_global = ""
@@ -57,8 +71,8 @@ def login() -> Response:
         crs_username_global = crs_username
         crs_password_global = crs_password
 
-        # Use crscraper with the login credentials
-        crs_scraper = CRScraper(login_url, crs_username, crs_password, all_course_table_schedule_url)
+        # Use any of the crscraper with the login credentials
+        crs_scraper = CRScraperPreEnlistment(login_url, crs_username, crs_password, all_course_table_schedule_url)
         crs_scraper.login_into_crs() # Just to authenticate the user
 
         app.logger.debug(f"Login successful as {crs_username}!")
@@ -104,9 +118,22 @@ def scrape() -> Response:
     app.logger.debug(f"Scraping data for {crs_username_global} with course links {all_course_table_schedule_url}!")
 
     # ----------------------------------------------------------------
-    crs_scraper = CRScraper(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url) 
-    data = crs_scraper.main() 
+    data = None
+
+    # Know if the links are preentlistment or student registration
+    if "preenlistment" in all_course_table_schedule_url[0]:
+        crs_scraper = CRScraperPreEnlistment(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url)
+        data = crs_scraper.main()
+    elif "student_registration" in all_course_table_schedule_url[0]:
+        crs_scraper = CRScraperStudentRegistration(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url)
+        data = crs_scraper.main()
     # ----------------------------------------------------------------
+
+    # Scraping logic
+    if not data:
+        # Return a failure response with a 400 status code using make_response
+        response = make_response(jsonify({"message": "Failed to retrieve course data. Please try again", "status": "failure"}), 400)
+        return response
 
     app.logger.debug(f"Data scraped successfully! {data}")
 
@@ -114,26 +141,15 @@ def scrape() -> Response:
     # data_class = Data()
     # data = data_class.data() 
 
-    # Scraping logic
-    if not data:
-        # Return a failure response with a 400 status code using make_response
-        response = make_response(jsonify({"message": "Failed to retrieve course data. Please try again", "status": "failure"}), 400)
-        return response
-    
-    # Proceed with sorting and generating schedules
-    data_sorter = DataSorter(data)
-    data_sorter.sort_data()
-    # data_sorter.display_data(data_sorter.subjects_with_time)
-
-    data_generator = ScheduleGenerator(data_sorter.subjects_with_time)
-    schedules = data_generator.generate_schedules(data_sorter.subjects_with_time)
+    data_generator = ScheduleGenerator(data)
+    schedules = data_generator.generate_schedules(data)
     # data_generator.display_all_possible_schedules(schedules)
 
     ranked_schedules = data_generator.rank_by_probability(schedules)
     # data_generator.display_all_possible_schedules(ranked_schedules)
     data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
 
-    app.logger.debug(f"Schedules generated and ranked successfully! {ranked_schedules}")
+    app.logger.debug(f"Schedules generated and ranked successfully in schedules_ranked.csv! {ranked_schedules}")
 
     # Return a success response with a 200 status code using make_response
     response = make_response(jsonify({"message": "Schedule data generated", "status": "success"}), 200)
