@@ -78,7 +78,6 @@ class CRScraperPreEnlistment:
                 if table:
                     for row in table.find_all("tr")[1:]:
                         no_matching = row.get_text(separator="\n", strip=True)
-                        print(no_matching)
 
                         if no_matching == "No matching results":
                             raise ValueError("No matching results found or invalid course URL")
