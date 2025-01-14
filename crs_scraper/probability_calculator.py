@@ -33,12 +33,12 @@ class ProbabilityCalculator:
             total_demand_of_higher_prio = total_demand * cumulative_percentage
 
             if available_slots > total_demand_of_higher_prio:
-                return 1.0  # 100% chance if there are more slots than higher priority demand
+                return round(1.0, 2)  # 100% chance if there are more slots than higher priority demand
             else:
                 slots_for_this_priority = max(available_slots - (total_demand_of_higher_prio - demand_for_this_priority), 0)
-                return slots_for_this_priority / demand_for_this_priority if demand_for_this_priority > 0 else 0
+                return round(slots_for_this_priority / demand_for_this_priority, 2) if demand_for_this_priority > 0 else 0
         else:
-            return min(available_slots / total_demand, 1.0)
+            return round(min(available_slots / total_demand, 1.0), 2)
 
 # def main():
 #     # Simulate form input
