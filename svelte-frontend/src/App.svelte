@@ -104,7 +104,7 @@
 	function groupSchedules() {
 		let currentGroup = [];
 
-		schedules.forEach(schedule => {
+		Array.isArray(schedules) && schedules.forEach(schedule => { // Make sure schedules is an array
 			if (!schedule.Course) {
 				if (currentGroup.length > 0) {
 					// Calculate average probability for the group
