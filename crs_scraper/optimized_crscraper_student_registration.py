@@ -9,7 +9,7 @@ Section = str
 Schedule = list[dict[str, str | int | float]]
 ListOfCoursesWithTime = list[dict[Course, list[dict[Section, Schedule]]]]
 
-class CRScraper:
+class CRScraperStudentRegistration:
     def __init__(self, login_url: str, username: str, password: str, all_course_table_schedule_url: list[str]) -> None:
         self.username = username
         self.password = password

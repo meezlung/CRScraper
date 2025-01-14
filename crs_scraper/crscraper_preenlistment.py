@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from bs4.element import Tag
 from typing import Optional, Union
 
-class CRScraper:
+class CRScraperPreEnlistment:
     def __init__(self, login_url: str, username: str, password: str, all_course_table_schedule_url: list[str]) -> None:
         self.username = username
         self.password = password
