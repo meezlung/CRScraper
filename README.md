@@ -15,36 +15,25 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
 <br />
 
 ## Simple Testing
- 1. Clone the repository
+ 1. In a terminal, clone the repository, and go to the file directory.
     ```
     git clone https://github.com/meezlung/CRScraper.git
     cd CRScraper/
     ```
     
- 2. Search for your preferred courses in CRS and copy paste the input as follows:
-    ```
-    all_course_table_schedule_url_cs_test = [
-                        "https://crs.upd.edu.ph/preenlistment/class_search/19405", 
-                        "https://crs.upd.edu.ph/preenlistment/class_search/19398", 
-                        "https://crs.upd.edu.ph/preenlistment/class_search/19403",
-                        "https://crs.upd.edu.ph/preenlistment/class_search/19404",
-                        "https://crs.upd.edu.ph/preenlistment/class_search/19480",
-                        ] # Sample format for CS 136, CS 21, CS 33, CS 132, and Eng 30
-    
-    # Note: Each URL corresponds to a search result table of a DESIRED COURSE.
-    # You may edit this list as you please.
-    ```
-    
- 3. Open ```test.py``` in a text editor, and modify the ```all_course_table_schedule_url_cs_test``` variable.
-    
- 5. Feel free to edit the ```filename``` variable as well.
-    
- 6. Save the file and run ```test.py``` in the terminal.
+ 2. Run the Python file `test.py`.
     ```
     python test.py
     ```
     
- 7. The generated ranked schedules output will be saved as ```schedules_ranked_test.csv``` and will be in the same directory as ```test.py```.
+ 3. Enter your credentials, and the desired courseURLs separated by commas. For example, the following shows the sample format in CS 136, CS 21, CS 33, CS 132, and Eng 30 under the Student Registration tab):
+    ```
+    CRS Username: gimislang
+    CRS Password:
+    Enter the course table schedule URLs separated by comma: https://crs.upd.edu.ph/student_registration/class_search/19405, https://crs.upd.edu.ph/student_registration/class_search/19398, https://crs.upd.edu.ph/student_registration/class_search/19403, https://crs.upd.edu.ph/student_registration/class_search/19404, https://crs.upd.edu.ph/student_registration/class_search/19480
+    ``` 
+    
+ 4. The generated ranked schedules output will be saved as either `schedules_ranked_test_preenlistment.csv` or `schedules_ranked_test_student_registration.csv` and will be in the same directory as `test.py`.
 
 <br />
 
