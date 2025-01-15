@@ -30,21 +30,8 @@ login_url = "https://crs.upd.edu.ph/"
 crs_username_global = input("CRS Username: ")
 crs_password_global = getpass("CRS Password: ")
 
-# preenlistment
-# all_course_table_schedule_urls = ["https://crs.upd.edu.ph/preenlistment/class_search/19405", 
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19398", 
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19403",
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19404",
-#                                  "https://crs.upd.edu.ph/preenlistment/class_search/19480",
-#                                  ] # sample format
-
-# student registration
-all_course_table_schedule_urls = ["https://crs.upd.edu.ph/student_registration/class_search/19405", 
-                                 "https://crs.upd.edu.ph/student_registration/class_search/19398", 
-                                 "https://crs.upd.edu.ph/student_registration/class_search/19403",
-                                 "https://crs.upd.edu.ph/student_registration/class_search/19404",
-                                 "https://crs.upd.edu.ph/student_registration/class_search/19480",
-                                 ] # sample format
+# Ask input from the terminal
+all_course_table_schedule_urls = input("Enter the course table schedule URLs separated by comma: ").split(",") # sample format
 
 all_course_table_schedule_url_test = [""]
 

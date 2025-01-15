@@ -178,6 +178,7 @@
 								<thead>
 									<tr>
 										<th>Course</th>
+										<th>Instructors</th>
 										<th>Section</th>
 										<th>Day</th>
 										<th>Time</th>
@@ -189,6 +190,7 @@
 										{#if schedule.Probability}
 											<tr>
 												<td>{schedule.Course}</td>
+												<td>{schedule.Instructors}</td>
 												<td>{schedule.Section}</td>
 												<td>{schedule.Day}</td>
 												<td>{schedule.Time}</td>
@@ -197,6 +199,7 @@
 										{:else}
 											<tr>
 												<td>{schedule.Course}</td>
+												<td>{schedule.Instructors}</td>
 												<td>{schedule.Section}</td>
 												<td>{schedule.Day}</td>
 												<td>{schedule.Time}</td>

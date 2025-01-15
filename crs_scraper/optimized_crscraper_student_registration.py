@@ -165,6 +165,6 @@ class CRScraperStudentRegistration:
                 "Demand": int(demand),
                 "Credits": sum([float(credit.strip('()')) for credit in credits]),
                 "Probability": probability,
-                "Instructors": cells[1].get_text(separator=", ", strip=True).split(', ')[1],
+                "Instructors": cells[1].get_text(separator="\n", strip=True).split('\n')[1],
             } for sched in schedule
         ]
