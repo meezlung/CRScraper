@@ -1,0 +1,1097 @@
+Course,Section,Day,Time,Room,Available Slots,Total Slots,Demand,Credits,Probability,Instructors
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFX,WF,2:30-4PM,lec,0,25,16,3.0,-100.0,"TORRECAMPO, ROSELLA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFV,WF,11:30AM-1PM,lec,0,25,27,3.0,-100.0,"SANCHEZ, RENDELL"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFX,WF,2:30-4PM,lec,0,25,16,3.0,-100.0,"TORRECAMPO, ROSELLA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFV,WF,11:30AM-1PM,lec,0,25,27,3.0,-100.0,"SANCHEZ, RENDELL"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFW,WF,1-2:30PM,lec,13,22,9,4.0,100.0,Concealed
+CS 21,WFW,F,4-7PM,lab,13,22,9,4.0,100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFV,WF,11:30AM-1PM,lec,22,30,9,3.0,100.0,Concealed
+Eng 30,WFR,WF,8:30-10AM,lec,0,25,16,3.0,-100.0,"SANCHEZ, RENDELL"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-1,TTh,10-11:30AM,lec,0,25,3,3.0,100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFX,WF,2:30-4PM,lec,0,25,16,3.0,-100.0,"TORRECAMPO, ROSELLA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFR,WF,8:30-10AM,lec,4,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,15,25,1,4.0,100.0,Concealed
+CS 33,WFU,W,2:30-5:30PM,lab,15,25,1,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFX,WF,2:30-4PM,lec,0,25,16,3.0,-100.0,"TORRECAMPO, ROSELLA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFU,WF,10-11:30AM,lec,5,30,6,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFW,WF,1-2:30PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFX,WF,2:30-4PM,lec,5,30,2,3.0,100.0,Concealed
+Eng 30,WFR,WF,8:30-10AM,lec,0,25,16,3.0,-100.0,"SANCHEZ, RENDELL"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFR,WF,8:30-10AM,lec,14,25,3,4.0,100.0,Concealed
+CS 33,WFR,W,4-7PM,lab,14,25,3,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,MDEG,M,10AM-1PM,lec,0,25,9,3.0,-100.0,"ANCHETA, MARIA RHODORA"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU,TTh,10-11:30AM,lec,0,25,1,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THU-2,TTh,10-11:30AM,lec,1,25,32,3.0,-100.0,"JOLO, JULIE"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW,TTh,1-2:30PM,lec,0,25,9,3.0,-100.0,"DEOCAMPO, IRISH JOY"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THW-1,TTh,1-2:30PM,lec,0,25,5,3.0,-100.0,"DUENAS, MA. SOCORRO"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,THY,TTh,4-5:30PM,lec,1,25,17,3.0,-100.0,"DUNGCA, GEORGE EVAN"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFQ,WF,7-8:30AM,lec,1,25,10,3.0,-100.0,"GO, CHRISTIAN ALBERT"
+,,,,,,,,,,
+CS 136,WFX,WF,2:30-4PM,lec,6,30,2,3.0,100.0,Concealed
+CS 21,WFV,WF,11:30AM-1PM,lec,0,22,18,4.0,-100.0,Concealed
+CS 21,WFV,F,4-7PM,lab,0,22,18,4.0,-100.0,Concealed
+CS 33,WFU,WF,10-11:30AM,lec,6,25,10,4.0,100.0,Concealed
+CS 33,WFU,W,4-7PM,lab,6,25,10,4.0,100.0,Concealed
+CS 132,WFW,WF,1-2:30PM,lec,5,30,7,3.0,100.0,Concealed
+Eng 30,WFR,WF,8:30-10AM,lec,0,25,16,3.0,-100.0,"SANCHEZ, RENDELL"
