@@ -124,6 +124,7 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks. **(Still don't know how to implement)**
  - JavaScript scraper in the future so we can upload to Google Extensions?! If not, host in the internet? Though needs a way to host backend and frontend online (consider homemade Linux server).
  - Feed preenlistment and registration priority to Probability Calculator.
+ - Add a "You are already registered" detector or something that keeps in mind that it's still not preenlistment or registration period.
  - Also add criterias/filtering functions for organizing schedules (e.g. no weekend classes, no classes after 4 pm, no class start before 9 per se). **(Still don't know how to implement)**
  - Apply DP to overlapping subproblems in the backtrack function. **(Parang hirap pala neto, or ewan ko kung posible ba yan)**
  - Organize documentation per each function.
