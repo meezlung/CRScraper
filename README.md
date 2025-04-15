@@ -14,7 +14,7 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
 
 <br />
 
-## Simple Testing
+## Use the App through the terminal
  1. In a terminal, clone the repository, and go to the file directory.
     ```
     git clone https://github.com/meezlung/CRScraper.git
