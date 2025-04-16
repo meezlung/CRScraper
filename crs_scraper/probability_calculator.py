@@ -4,18 +4,19 @@ class ProbabilityCalculator:
     def __init__(self) -> None:
        # Priority to percentage mapping
         self.CUMULATIVE_PRIO_TO_PERCENTAGE_MAP = {
-            "specialNeeds": 0.0,
+            "specialneeds": 0.0,
             "graduating": 0.05,
             "assistant": 0.15,
             "freshman": 0.16,
             "varsity": 0.41,
-            "cadetOfficer": 0.46,
+            "cadetofficer": 0.46,
             "regular": 0.47,
-            "lowPriority": 0.95,
+            "lowpriority": 0.95,
         } 
 
     def get_previous_priority(self, priority: str) -> str:
         # Get the list of priorities in order and find the previous priority
+        priority = priority.lower().replace(" ", "")
         priorities = list(self.CUMULATIVE_PRIO_TO_PERCENTAGE_MAP.keys())
         index = priorities.index(priority)
         return priorities[index - 1] if index > 0 else ""
