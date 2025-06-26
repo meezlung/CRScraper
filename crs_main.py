@@ -4,20 +4,57 @@
 # from crs_scraper.crs_data import Data
 # from crs_scraper.data_sorter import DataSorter, ScheduleGenerator
 
+# For .env
+from dotenv import load_dotenv
+
+# Load .env into os.environ
+load_dotenv()
+
 # Optimized libraries
 from crs_scraper.optimized_crscraper_preenlistment import CRScraperPreEnlistment
 from crs_scraper.optimized_crscraper_student_registration import CRScraperStudentRegistration
 from crs_scraper.data_sorter import ScheduleGenerator
 
-from flask import Flask, Response, jsonify, make_response, request
+from flask import Flask, Response, jsonify, make_response, url_for, request, session
 from flask_cors import CORS
 import csv
 import os
+from requests import Session
+from requests.cookies import RequestsCookieJar
+from requests.utils import dict_from_cookiejar
+
+# Login with Google OAuth feature
+from authlib.integrations.flask_client import OAuth
+from bs4 import BeautifulSoup
+from requests.utils import cookiejar_from_dict
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+import pyotp
 
 # ------------------------------------------------------------
-app = Flask(__name__) 
-CORS(app, resources={r"/*": {"origins": "*"}})
+app = Flask("CRScraper") 
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 app.config['DEBUG'] = True
+
+# Login with Google OAuth feature
+app.secret_key = os.getenv("FLASK_SECRET_KEY")
+app.config.update({
+    "GOOGLE_CLIENT_ID":     os.getenv("GOOGLE_CLIENT_ID"),
+    "GOOGLE_CLIENT_SECRET": os.getenv("GOOGLE_CLIENT_SECRET"),
+    "GOOGLE_DISCOVERY_URL": os.getenv("GOOGLE_DISCOVERY_URL"),
+})
+
+oauth = OAuth(app)
+google = oauth.register(
+    name="google",
+    client_id=app.config["GOOGLE_CLIENT_ID"],
+    client_secret=app.config["GOOGLE_CLIENT_SECRET"],
+    server_metadata_url=app.config["GOOGLE_DISCOVERY_URL"],
+    client_kwargs={ "scope": "openid email profile" },
+)
 # ------------------------------------------------------------
 
 
@@ -46,6 +83,8 @@ login_url = "https://crs.upd.edu.ph/"
 # https://crs.upd.edu.ph/student_registration/class_search/19405, https://crs.upd.edu.ph/student_registration/class_search/19398, https://crs.upd.edu.ph/student_registration/class_search/19403, https://crs.upd.edu.ph/student_registration/class_search/19404, https://crs.upd.edu.ph/student_registration/class_search/19480
 # ------------------------------------------------------------
 
+# test https://crs.upd.edu.ph/student_registration/class_search/18843, https://crs.upd.edu.ph/student_registration/class_search/14732
+
 all_course_table_schedule_url: list[str] = []
 crs_username_global = ""
 crs_password_global = ""
@@ -55,6 +94,9 @@ crs_password_global = ""
 # ------------------------------------------------------------
 @app.route('/login', methods=['POST'])
 def login() -> Response:
+    """
+    DEPRECATED: Due to CRS new login feature.
+    """
     global crs_username_global, crs_password_global
 
     credentials = request.json
@@ -86,6 +128,67 @@ def login() -> Response:
     return response
 
 
+@app.route('/login-with-gmail')
+def login_with_google() -> Response:
+    if not google:
+        response = make_response(jsonify({
+            "message": "Google OAuth not set correctly",
+            "status": "failure"
+        }), 500)
+        return response
+    
+    redirect_url = url_for("auth_callback", _external=True)
+    return google.authorize_redirect(redirect_url)
+
+@app.route('/auth/callback')
+def auth_callback() -> Response:
+    # Check if google is properly initialized
+    if not google:
+        return make_response(jsonify({
+            "message": "Google OAuth not set correctly",
+            "status": "failure"
+        }), 500)
+    
+    # 1) Finish the Authlib / Google flow
+    token = google.authorize_access_token()
+    nonce = token.get("nonce")
+    userinfo = google.parse_id_token(token, nonce)
+    id_token = token.get("id_token")
+    email = userinfo.get("email", "")
+    if not email.endswith("@up.edu.ph"):
+        return make_response("Forbidden", 403)
+
+    # 2) Instantiate your scraper (no need for username/password here)
+    scraper = CRScraperPreEnlistment(
+        login_url=login_url,
+        username=None,
+        password=None,
+        all_course_table_schedule_url=all_course_table_schedule_url
+    )
+
+    # 3) Delegate to your method—this will pop up Chrome for the user to log in,
+    #    complete 2FA, then harvest the CRS cookies back into scraper.session.
+    scraper.login_with_google_token(userinfo)
+
+    # # seamless login:
+    # scraper.login_with_id_token(id_token)
+    # session['crs_cookies_dict'] = dict_from_cookiejar(scraper.session.cookies)
+    # app.logger.debug(f"Scraper cookies!: {session.get('crs_cookies_dict')!r}")
+
+    # 4) Now persist those cookies in Flask session for later `/scrape` use:
+    # session['crs_cookies_dict'] = dict_from_cookiejar(scraper.session.cookies)
+    session['crs_selenium_cookies'] = scraper._selenium_cookies
+
+    app.logger.debug(f"Selenium gave: {session.get('crs_selenium_cookies')!r}")
+
+    # 5) Signal success back to the SPA
+    return make_response("""
+    <script>
+      window.opener.postMessage({ status: 'success' }, 'http://localhost:3000');
+      window.close();
+    </script>
+    """, 200)
+
 @app.route('/set-urls', methods=['POST'])
 def set_urls() -> Response:
     global all_course_table_schedule_url
@@ -108,6 +211,31 @@ def set_urls() -> Response:
 
 @app.route('/scrape', methods=['POST'])
 def scrape() -> Response:
+    raw = session.get('crs_selenium_cookies')
+    if not raw:
+        return make_response(jsonify({"status":"failure","message":"Not logged in"}), 401)
+
+    jar = RequestsCookieJar()
+    for c in raw:
+        jar.set(
+            name   = c['name'],
+            value  = c['value'],
+            domain = c.get('domain', 'crs.upd.edu.ph'),
+            path   = c.get('path', '/'),
+            secure = c.get('secure', False),
+            rest   = {'HttpOnly': c.get('httpOnly', False)}
+        )
+
+    s = Session()
+    s.cookies = jar
+
+    # Debug: log what cookies will be sent
+    app.logger.debug(f"Requests sends: {s.cookies.items()}")
+
+    # debug: confirm you’re still logged in
+    r = s.get("https://crs.upd.edu.ph/user/view/classmessages")
+    open("debug_after_rebuild.html","w",encoding="utf8").write(r.text)
+
     global crs_username_global, crs_password_global, all_course_table_schedule_url
 
     if not all_course_table_schedule_url:
@@ -123,11 +251,15 @@ def scrape() -> Response:
     # Know if the links are preentlistment or student registration
     if "preenlistment" in all_course_table_schedule_url[0]:
         crs_scraper = CRScraperPreEnlistment(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url)
+        crs_scraper.session = s
         data = crs_scraper.main()
     elif "student_registration" in all_course_table_schedule_url[0]:
         crs_scraper = CRScraperStudentRegistration(login_url, crs_username_global, crs_password_global, all_course_table_schedule_url)
+        crs_scraper.session = s
         data = crs_scraper.main()
     # ----------------------------------------------------------------
+
+    app.logger.debug(f"What's up with data! {data}")
 
     # Scraping logic
     if not data:
@@ -145,9 +277,13 @@ def scrape() -> Response:
     schedules = data_generator.generate_schedules(data)
     # data_generator.display_all_possible_schedules(schedules)
 
+    app.logger.debug(f"Raw schedules from generator: {schedules!r}")
+
     ranked_schedules = data_generator.rank_by_probability(schedules)
     # data_generator.display_all_possible_schedules(ranked_schedules)
     data_generator.convert_to_csv(ranked_schedules, "schedules_ranked.csv")
+
+    app.logger.debug(f"Raw schedules from generator: {ranked_schedules!r}")
 
     app.logger.debug(f"Schedules generated and ranked successfully in schedules_ranked.csv! {ranked_schedules}")
 
