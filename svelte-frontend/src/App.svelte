@@ -39,7 +39,7 @@
 		const popup = window.open(
 			'http://localhost:8080/login-with-gmail',
 			'CRS-OAuth',
-			'width=500,height=600'
+			'width=400,height=300'
 		);
 
 
