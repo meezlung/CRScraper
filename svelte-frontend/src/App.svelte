@@ -11,6 +11,7 @@
 		try {
 			const res = await fetch('http://localhost:8080/login', {
 				method: 'POST',
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json'
 				},
@@ -32,6 +33,32 @@
 	// -----------------------------------------
 
 
+	// --------------- New Google OAuth login ---------------
+	function oauthLogin() {
+		errorMessage = '';
+		const popup = window.open(
+			'http://localhost:8080/login-with-gmail',
+			'CRS-OAuth',
+			'width=500,height=600'
+		);
+
+
+		function onMsg(e) {
+			// if (e.origin !== window.location.origin) return; // Ensure it’s your frontend, not backend
+			if (e.data.status === 'success') {
+				isAuthenticated = true;
+			} else {
+				errorMessage = 'Google login failed';
+			}
+			window.removeEventListener('message', onMsg);
+			popup.close();
+		}
+
+		window.addEventListener('message', onMsg);
+	}
+	// -----------------------------------------
+
+
 	// ----------- For setting URLS ------------
 	let courseURLs = '';
 	let urlMessage = '';
@@ -47,6 +74,7 @@
 		try {
 			const res = await fetch('http://localhost:8080/set-urls', {
 				method: 'POST',
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json'
 				},
@@ -72,8 +100,14 @@
 	let schedules = [];
 	let scheduleGroups = [];
 	let visibleCount = 3;
+	let fetched = false;
 
 	async function getSchedules() {
+		schedules = [];
+		scheduleGroups = [];
+		visibleCount = 3;
+		fetched = false;
+
 		if (!urlsSet) {
 			urlMessage = "Please set course URLs first before fetching schedules.";
 			return; // Exit the function early if URLs are not set
@@ -82,6 +116,7 @@
 		try {
 			const scrapeResponse = await fetch('http://localhost:8080/scrape', {
 				method: 'POST',
+				credentials: 'include',
 				headers: {
 					'Content-Type': 'application/json'
 				}
@@ -89,9 +124,14 @@
 			const scrapeResult = await scrapeResponse.json();
 
 			if (scrapeResult.status === "success") {
-				const scheduleResponse = await fetch('http://localhost:8080/get-schedule');
+				const scheduleResponse = await fetch(
+					'http://localhost:8080/get-schedule', 
+					{ credentials: 'include' }
+				);
+				
 				schedules = await scheduleResponse.json();
 				groupSchedules();
+				fetched = true; // ← only here do we mark “I tried”
 			} else {
 				urlMessage = "Failed to generate schedule data.";
 			}
@@ -171,60 +211,68 @@
 				<h1>Schedule List</h1>
 				<button on:click={getSchedules}>Fetch Schedules</button>
 
-				<div class="schedule-box-big">
-					{#each scheduleGroups.slice(0, visibleCount) as group}
-						<div class="schedule-box-small">
-							<table class="schedule-table">
-								<thead>
-									<tr>
-										<th>Course</th>
-										<th>Instructors</th>
-										<th>Section</th>
-										<th>Day</th>
-										<th>Time</th>
-										<th>Probability</th>
-									</tr>
-								</thead>
-								<tbody>
-									{#each group.schedules as schedule}
-										{#if schedule.Probability}
+				{#if fetched}
+					{#if scheduleGroups.length > 0}
+						<div class="schedule-box-big">
+							{#each scheduleGroups.slice(0, visibleCount) as group}
+								<div class="schedule-box-small">
+									<table class="schedule-table">
+										<thead>
 											<tr>
-												<td>{schedule.Course}</td>
-												<td>{schedule.Instructors}</td>
-												<td>{schedule.Section}</td>
-												<td>{schedule.Day}</td>
-												<td>{schedule.Time}</td>
-												<td>{schedule.Probability}%</td>
+												<th>Course</th>
+												<th>Instructors</th>
+												<th>Section</th>
+												<th>Day</th>
+												<th>Time</th>
+												<th>Probability</th>
 											</tr>
-										{:else}
-											<tr>
-												<td>{schedule.Course}</td>
-												<td>{schedule.Instructors}</td>
-												<td>{schedule.Section}</td>
-												<td>{schedule.Day}</td>
-												<td>{schedule.Time}</td>
-												<td>{schedule.Probability}</td>
+										</thead>
+										<tbody>
+											{#each group.schedules as schedule}
+												{#if schedule.Probability}
+													<tr>
+														<td>{schedule.Course}</td>
+														<td>{schedule.Instructors}</td>
+														<td>{schedule.Section}</td>
+														<td>{schedule.Day}</td>
+														<td>{schedule.Time}</td>
+														<td>{schedule.Probability}%</td>
+													</tr>
+												{:else}
+													<tr>
+														<td>{schedule.Course}</td>
+														<td>{schedule.Instructors}</td>
+														<td>{schedule.Section}</td>
+														<td>{schedule.Day}</td>
+														<td>{schedule.Time}</td>
+														<td>{schedule.Probability}</td>
+													</tr>
+												{/if}
+											{/each}
+											<tr class="average-row">
+												{#if group.averageProbability == "N/A"}
+													<td colspan="4"><strong>Average Probability</strong></td>
+													<td><strong>{group.averageProbability}</strong></td>
+												{:else}
+													<td colspan="4"><strong>Average Probability</strong></td>
+													<td><strong>{group.averageProbability}%</strong></td>
+												{/if}
 											</tr>
-										{/if}
-									{/each}
-									<tr class="average-row">
-										{#if group.averageProbability == "N/A"}
-											<td colspan="4"><strong>Average Probability</strong></td>
-											<td><strong>{group.averageProbability}</strong></td>
-										{:else}
-											<td colspan="4"><strong>Average Probability</strong></td>
-											<td><strong>{group.averageProbability}%</strong></td>
-										{/if}
-									</tr>
-								</tbody>
-							</table>
-							<br />
+										</tbody>
+									</table>
+									<br />
+								</div>
+							{/each}
+							{#if visibleCount < scheduleGroups.length}
+								<button on:click={showMore}>Show More</button>
+							{/if}
 						</div>
-					{/each}
-					{#if visibleCount < scheduleGroups.length}
-						<button on:click={showMore}>Show More</button>
+					{:else}
+						<p style="color: #555; margin-top: 1em;">
+							❗️ No conflict-free schedules available. Try removing or swapping one of your courses.
+						</p>
 					{/if}
-				</div>
+				{/if}
 			</div>	
 		</div>
 
@@ -239,13 +287,21 @@
 			</div>
 			<div>
 				<label for="password">Password:</label>
-				<input type="password" id="password" bind:value={crs_password} required />
+				<input type="password" id="password" bind:value={crs_password} required />  
 			</div>
 			<button type="submit">Login</button>
+
 			{#if errorMessage}
 				<p style="color: red;">{errorMessage}</p>
 			{/if}
 		</form>
+
+		<p>— or —</p>
+
+		<!-- Separate OAuth button outside the form -->
+		<button on:click={oauthLogin}>
+			Login via UP Mail (Google)
+		</button>
 	{/if}
 </main>
 
