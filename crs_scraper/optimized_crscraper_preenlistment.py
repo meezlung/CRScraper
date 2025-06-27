@@ -102,7 +102,7 @@ class CRScraperPreEnlistment:
         if "Login Error" in login_response.text:  # Adjust the error message based on the site
             raise ValueError("Login failed: Invalid username or password")
 
-    def login_with_google_token(self, userinfo) -> None:
+    def login_with_google_token(self) -> None:
         """
         Launches a real Chrome window for the user to complete Google OAuth (email/password/2FA).
         Once redirected back to CRS, it harvests cookies into requests.Session.
