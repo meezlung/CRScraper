@@ -14,7 +14,33 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
 
 <br />
 
-## Use the App through the terminal
+> [!NOTE]  
+> CRS only supports Login via Gmail now. I had a workaround for this by having my own Google OAuth callback. That is, once the user has logged into their authenticated CRS webpage with their UP Email, the program fetches those cookies to feed it into the CRScraper's session. In this way, we replicated the authenticated webpage in which we can safely scrape schedules now! It's a crazy workaround so I am thinking of moving this into an JavaScript extension, which would still reuse some of my endpoints.
+
+> [!WARNING]  
+> Don't use Docker if you're going to Login via Gmail. Just simply run the backend and frontend in two separate terminal. Though it's unfortunate that you still have to setup the OAuth client in Google Console and setup your own `.env` for the variables: `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`. `GOOGLE_DISCOVERY_URL` is just `https://accounts.google.com/.well-known/openid-configuration`. 
+
+## Use the App by running backend and frontend separately
+ 1. In one terminal, clone the repository, and go to the file directory.
+    ```
+    git clone https://github.com/meezlung/CRScraper.git
+    cd CRScraper/
+    ```
+ 2. Run the following for the backend:
+    ```
+    python app/crs_main.py
+    ```
+ 3. On another terminal, run the following for the frontend:
+    ```
+    cd CRScraper # Make sure you're in this directory again
+    npm run dev
+    ```
+ 4. Finally, go to `http://localhost:3000/`.
+
+> [!WARNING]  
+> Below uses `username` and `password` login only.
+
+## Test the App through the terminal
  1. In a terminal, clone the repository, and go to the file directory.
     ```
     git clone https://github.com/meezlung/CRScraper.git
@@ -36,6 +62,9 @@ courseURLS sample input: ```https://crs.upd.edu.ph/preenlistment/class_search/56
  4. The generated ranked schedules output will be saved as either `schedules_ranked_test_preenlistment.csv` or `schedules_ranked_test_student_registration.csv` and will be in the same directory as `test.py`.
 
 <br />
+
+> [!WARNING]  
+> Below uses `username` and `password` login only.
 
 ## Use the App through Docker
  1. Download [Docker](https://docs.docker.com/desktop/) (if you don't have one yet).
