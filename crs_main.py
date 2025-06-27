@@ -39,7 +39,7 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 app.config['DEBUG'] = True
 
 # Login with Google OAuth feature
-# app.secret_key = os.getenv("FLASK_SECRET_KEY")
+app.secret_key = os.getenv("FLASK_SECRET_KEY")
 app.config.update({
     "GOOGLE_CLIENT_ID":     os.getenv("GOOGLE_CLIENT_ID"),
     "GOOGLE_CLIENT_SECRET": os.getenv("GOOGLE_CLIENT_SECRET"),
@@ -129,38 +129,51 @@ def login() -> Response:
 
 
 @app.route('/login-with-gmail')
-def login_with_google() -> Response:
+def login_with_google():
+    # Render a helper page telling the user to log in on CRS
+    html = """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>CRS Login</title>
+      <style>
+        body {
+          font-family: sans-serif;
+          text-align: center;
+        }
+        .box {
+          display: inline-block;
+          padding: 1.5rem;
+          border: 2px solid #444;
+          border-radius: 8px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="box">
+        <h2>⚙️ Redirecting to CRS…</h2>
+        <p>Please complete your UP Mail login in the new window.</p>
+        <p>If you don’t see anything, check your pop-up blocker.</p>
+        <p>Note: This is for authentication purposes.</p>
+      </div>
+      <script>
+        // Kick off the real login handshake after a short pause
+        setTimeout(() => {
+          // change location to the actual OAuth endpoint
+          window.location.href = '/_continue_crs_oauth';
+        }, 1000);
+      </script>
+    </body>
+    </html>
+    """
+    return html
+
+
+@app.route('/_continue_crs_oauth')
+def _continue_crs_oauth() -> Response:
     global clicked_login_with_google
     clicked_login_with_google = True
-
-    if not google:
-        response = make_response(jsonify({
-            "message": "Google OAuth not set correctly",
-            "status": "failure"
-        }), 500)
-        return response
-    
-    redirect_url = url_for("auth_callback", _external=True)
-    return google.authorize_redirect(redirect_url)
-
-
-@app.route('/auth/callback')
-def auth_callback() -> Response:
-    # Check if google is properly initialized
-    if not google:
-        return make_response(jsonify({
-            "message": "Google OAuth not set correctly",
-            "status": "failure"
-        }), 500)
-    
-    # Finish the Authlib / Google flow
-    token = google.authorize_access_token()
-    nonce = token.get("nonce")
-    userinfo = google.parse_id_token(token, nonce)
-    id_token = token.get("id_token")
-    email = userinfo.get("email", "")
-    if not email.endswith("@up.edu.ph"):
-        return make_response("Forbidden", 403)
 
     # Instantiate your scraper (no need for username/password here)
     scraper = CRScraperPreEnlistment(
@@ -172,7 +185,7 @@ def auth_callback() -> Response:
 
     # Delegate to your method—this will pop up Chrome for the user to log in,
     # complete 2FA, then harvest the CRS cookies back into scraper.session.
-    scraper.login_with_google_token(userinfo)
+    scraper.login_with_google_token()
 
     # Now persist those cookies in Flask session for later `/scrape` use:
     session['crs_selenium_cookies'] = scraper._selenium_cookies
