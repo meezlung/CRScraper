@@ -42,11 +42,22 @@ class CRScraperPreEnlistment:
         self.probability_calculator = ProbabilityCalculator()
 
     def main(self) -> Optional[ListOfCoursesWithTime]:
-        # print("Logging into CRS...")
-        # self.login_into_crs()
-        # print("Logged in successfully.")
-        # print()
+        print("Logging into CRS...")
+        self.login_into_crs()
+        print("Logged in successfully.")
+        print()
 
+        print("Getting priority...")
+        self.get_priority()
+        print()
+
+        print("Accessing all possible course schedules...")
+        self.access_all_possible_course_schedules()
+        print("All possible course schedules accessed.")
+        print()
+        return self.data
+    
+    def main_with_email(self) -> Optional[ListOfCoursesWithTime]:
         print("Getting priority...")
         self.get_priority()
         print()
@@ -128,7 +139,6 @@ class CRScraperPreEnlistment:
         # isolate profile to avoid conflicts
         profile_dir = tempfile.mkdtemp(prefix=f"chrome-{uuid.uuid4().hex}-")
         options.add_argument(f"--user-data-dir={profile_dir}")
-
 
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)

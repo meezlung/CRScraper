@@ -42,11 +42,22 @@ class CRScraperStudentRegistration:
         self.probability_calculator = ProbabilityCalculator()
 
     def main(self) -> Optional[ListOfCoursesWithTime]:
-        # print("Logging into CRS...")
-        # self.login_into_crs()
-        # print("Logged in successfully.")
-        # print()
+        print("Logging into CRS...")
+        self.login_into_crs()
+        print("Logged in successfully.")
+        print()
 
+        print("Getting priority...")
+        self.get_priority()
+        print()
+
+        print("Accessing all possible course schedules...")
+        self.access_all_possible_course_schedules()
+        print("All possible course schedules accessed.")
+        print()
+        return self.data
+    
+    def main_with_email(self) -> Optional[ListOfCoursesWithTime]:
         print("Getting priority...")
         self.get_priority()
         print()
@@ -109,7 +120,7 @@ class CRScraperStudentRegistration:
         # 2) Initiate the Google-OAuth handshake (this assumes Google authentication is done, and email is known)
         oauth_resp = self.session.post(
             f"{self.login_url.rstrip('/')}/auth/login_upmail",
-            data={"csrf_token": csrf, "email": userinfo['email']},  # Use email directly
+            data={"csrf_token": csrf},
             allow_redirects=False,
         )
         oauth_resp.raise_for_status()
@@ -120,15 +131,14 @@ class CRScraperStudentRegistration:
         # 3) Launch Chrome for manual login (no need for manual input, as the credentials are already obtained)
         options = Options()
         # Remove headless: user will see and interact
-        options.add_argument("--headless=new")       # headless mode
-        options.add_argument("--no-sandbox")         # required in many Linux containers
-        options.add_argument("--disable-dev-shm-usage")  # avoid /dev/shm mounting issues
-        options.add_argument("--disable-gpu")        # no GPU in container
-        options.add_argument("--remote-debugging-port=9222")  # required by new headless
+        # options.binary_location = "/usr/bin/chromium"
+        # options.add_argument("--headless=new")          # or "--headless"
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        # options.add_argument("--disable-gpu")            # if you hit GPU errors
         # isolate profile to avoid conflicts
         profile_dir = tempfile.mkdtemp(prefix=f"chrome-{uuid.uuid4().hex}-")
         options.add_argument(f"--user-data-dir={profile_dir}")
-
 
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
