@@ -151,12 +151,11 @@ https://github.com/user-attachments/assets/8c4a7ae4-fd49-46dd-9710-ea5d16769eba
 
 # Mga Kulang Pa (Pero ewan ko kung gagawin ko pa to):
  - Ranking system based on [Rate UP Profs (RUPP)](https://rupp.onrender.com/) or Restrictions/Remarks. Maybe we could use a machine learning or smth. **(Still don't know how to implement)** 
- - JavaScript scraper in the future so we can upload to Google Extensions?! If not, host in the internet? Though needs a way to host backend and frontend online (consider homemade Linux server).
- - Feed preenlistment and registration priority to Probability Calculator.
- - Add a "You are already registered" detector or something that keeps in mind that it's still not preenlistment or registration period.
+ - ~JavaScript scraper in the future so we can upload to Google Extensions?! If not, host in the internet? Though needs a way to host backend and frontend online (consider homemade Linux server).~
+ - ~Feed preenlistment and registration priority to Probability Calculator.~
+ - ~Add a "You are already registered" detector or something that keeps in mind that it's still not preenlistment or registration period.~
  - Also add criterias/filtering functions for organizing schedules (e.g. no weekend classes, no classes after 4 pm, no class start before 9 per se). **(Still don't know how to implement)**
- - Apply DP to overlapping subproblems in the backtrack function. **(Parang hirap pala neto, or ewan ko kung posible ba yan)**
- - Organize documentation per each function.
- - Feature for utilizing similar subjects.
- - Ayusin nga tong documentation na toh.
- - Distinguish preenlistment and waitlisting features properly, both in documentation and src codes.
+ - ~Apply DP to overlapping subproblems in the backtrack function. **(Parang hirap pala neto, or ewan ko kung posible ba yan)**~
+ - ~Organize documentation per each function.~
+ - Feature for utilizing similar subjects. PS: What I meant here siguro was if kapag may fave kang subject/s na ideal 'yung time and/or place sayo. This could be under criterias na rin.
+ - ~Distinguish preenlistment and waitlisting features properly, both in documentation and src codes.~
