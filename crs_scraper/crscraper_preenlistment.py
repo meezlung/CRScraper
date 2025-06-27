@@ -73,7 +73,9 @@ class CRScraperPreEnlistment:
                 if table:
                     # Iterate over each row in the table body
                     for row in table.find_all("tr")[1:]:  # Skip the header row
-                        cells: list[Tag] = row.find_all("td")
+                        if not isinstance(row, Tag):
+                            continue
+                        cells: list[Tag] = [cell for cell in row.find_all("td") if isinstance(cell, Tag)]
                         
                         if len(cells) > 0:
 

@@ -135,6 +135,7 @@ class ScheduleGenerator:
             "WF": ["Wednesday", "Friday"],
             "TF": ["Tuesday", "Friday"],
             "MW": ["Monday", "Wednesday"],
+            "MTWThF": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         }
 
     def parse_time(self, time: str) -> tuple[datetime, datetime]:
